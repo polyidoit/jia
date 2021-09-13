@@ -18,6 +18,10 @@
             content: 'ZAJIA';
         }
     </style>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 </head>
 <body>
     <!-- Navigation -->
@@ -29,13 +33,18 @@
                 </div>
                 <nav id="navbar-1" class="navbar item-nav">
                     <ul>
-                          <li><a href="https://polyidoit.github.io/jia/index.html">
-                                             <h2>Home</h2></a></li>
-                        <li><a href="https://polyidoit.github.io/jia/research.html">
-                        <h2>Research</h2></a></li>
-                         <li><a href="https://polyidoit.github.io/jia/publication.html">
-                           <h2>Publications</h2></a></li>
-                        <li><a href="https://polyidoit.github.io/jia/Jia.html"><h2>中文主页</h2></a></li>
+						<li class="active"><a href="#about"><h2>Home</h2></a></li>
+				       
+						<li><a href="https://polyidoit.github.io/jia/research.html">
+						 <h2>Research</h2></a></li>
+						  
+						  <li><a href="https://polyidoit.github.io/jia/teaching.html">
+							<h2>Teaching</h2></a></li>
+						  
+						  <li><a href="https://polyidoit.github.io/jia/miscellanea.html">
+							<h2>Miscellanea</h2></a></li>
+						  
+						 <li><a href="#zh-home"><h2>中文主页</h2></a></li>
                     </ul>
                 </nav>
             </header>
@@ -43,7 +52,7 @@
     </div>
 
 	<!-- Introduction -->
-	<div class="intro section" id="about">
+	<div class="intro section" id="zh-home">
 		<div class="container">
 			<h2>Zhih-Ahn Jia(贾治安)</h2>
 			<div class="units-row units-split wrap">
@@ -51,7 +60,7 @@
 					<img src="zaj.jpg" alt="Avatar">
 	      </div>
 				<div class="unit-80">
-					<h1>我住在<br><span id="typed"></span></h1>					
+					<h1>我喜欢<br><span id="typed"></span></h1>					
 			  </div>
                 			
              	
@@ -142,16 +151,17 @@
 		<div class="container">
 			<div class="units-row">
 			    <div class="unit-50">
-			    	<p>©2017 Zhih-Ahn Jia(贾治安)/未来研究所</p>
+					<p>©未来研究所/Last undate Sep 13, 2021</p>
 		      </div>
 			    <div class="unit-50">
                
 				  <ul class="social list-flat right">
 												<!-- <li> <IMG SRC="/cgi-bin/Count.cgi?df=cajia.dat&dd=cdr&md=7&ft=0"> </li> -->
-                    <li><a href="mailto:giannjia@foxmail.com"><i class="fa fa-send"></i></a></li> 
-						<li><a href="https://polyidiot.wordpress.com/"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
-						<li><a href="https://zhihahnjia.wordpress.com/"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.researchgate.net/profile/Zhih_Ahn_Jia"><i class="fa fa-university" aria-hidden="true"></i></a></li> 
+					<li><a href="https://polyidiot.wordpress.com/"><i class="fab fa-wordpress" aria-hidden="true"></i></a></li>
+						<li><a href="https://zhihahnjia.wordpress.com/"><i class="fab fa-wordpress" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/james.kane.351104/"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/polyidoit"><i class="fab fa-github"></i></a></li>
+						<li><a href="https://www.zhihu.com/people/polyidiot"><i class="fab fa-zhihu"></i></a></li>
 					</ul>
 			    </div>
 			</div>
@@ -166,7 +176,7 @@
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
 		// Change to edit type effect
-		strings: ["地球上","遥远的北方天空","你们的宇宙中", "你们的银河系", "任何地方"],
+		strings: ["读书","诗歌","小说", "咖啡", "科学"],
 
 
 		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
