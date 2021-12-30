@@ -1,0 +1,18 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",   //用来启动chrome浏览器
+            "request": "launch",  
+            "name": "debugHTML",    //  修改启动的名字
+            "sourceMaps": true,
+            "webRoot":"${workspaceFolder}",
+            // "userDataDir": "${tmpdir}",    //会自动生成一个${tmpdir}文件名，如果报错可以开启这个选项
+            "file":"${file}",  //更改属性名为"file"，属性值此时表示此时打开的文件，就不需要手动改文件路径了。
+            // "port":8090
+        }
+    ]
+}
