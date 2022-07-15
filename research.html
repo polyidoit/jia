@@ -1,239 +1,1200 @@
-<! Zhian Jia html>
-<html>
-<head>
-    <title>Zhian Jia </title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="homepage of Zhian Jia 贾治安">
-    <meta name="author" content="Zhian Jia 贾治安">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="kube.min.css" />
-    <link rel="stylesheet" href="font-awesome.min.css" />
-    <link rel="stylesheet" href="custom.min.css" />
+<!DOCTYPE html>
+
+<html lang="en" style="" class=" js no-touch csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Zhian Jia Research Page</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="quantum information, quantum computation, theoretical physics, mathematics, computer science">
+
+
     <link rel="shortcut icon" href="favicon.png" />
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <style>
-        .intro h1:before {
-            content: 'ZAJIA';
-        }
-    </style>
-	
+
+
+    <!--CSS styles-->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="perfect-scrollbar-0.4.5.min.css">
+    <link rel="stylesheet" href="magnific-popup.css">
+    <link rel="stylesheet" href="style.css">
+    <link id="theme-style" rel="stylesheet" href="green.css">
+    <!--/CSS styles-->
+
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
 
-	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-		  tex2jax: {
-			skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-			inlineMath: [['$','$']]
-		  }
-		});
-	  </script>
-	  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
 
+    <!--Javascript files-->
+    <script type="text/javascript" src="jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="TweenMax.min.js"></script>
+    <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="jquery.carouFredSel-6.2.1-packed.js"></script>        
+    <script type="text/javascript" src="modernizr.custom.63321.js"></script>
+    <script type="text/javascript" src="jquery.dropdownit.js"></script>
+    <script type="text/javascript" src="jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="ScrollToPlugin.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="masonry.min.js"></script>
+    <script type="text/javascript" src="perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
+    <script type="text/javascript" src="magnific-popup.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <!--/Javascript files-->
+</head>
 
-</head>
-    
-    
-    <script type="text/javascript">
-<!--
-function toggle(abs_tr) {
-  var e = document.getElementById('abs-'+abs_tr);
-  document.status = e.style.display;
-  if(e.style.display == 'none') {
-    e.style.display = 'table-row';
-  } else {
-    e.style.display = 'none';
-  }
-}
-//-->
-</script>
-    
-    
-    
-</head>
 <body>
-    <!-- Navigation -->
-    <div class="main-nav">
-        <div class="container">
-            <header class="group top-nav">
-                <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
-                    <span class="logo">ZAJIA</span>
+
+
+
+
+
+
+<div id="wrapper">
+<a href="#sidebar" class="mobilemenu"><i class="icon-reorder"></i></a>
+
+<div id="sidebar">
+    <div id="main-nav">
+        <div id="nav-container">
+            <div id="profile" class="clearfix">
+                <div class="portrait hidden-xs"></div>
+                <div class="title">
+                    <h2>Research</h2>
+                    <h3><a href="https://polyidoit.github.io/jia/index.html">Back to homepage </a></h3>
                 </div>
-                <nav id="navbar-1" class="navbar item-nav">
-                    <ul>
+
+            </div>
+            <ul id="navigation">
+                <li class="currentmenu">
+                  <a href="#introduction">
+                    <div class="icon icon-user"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                    <div class="text">Zhian Jia</div>
+                  </a>
+                </li>  
+
+                <li class="cv">
+                    <a href="#cv">
+                        <div class="icon icon-archive"> <i class="ai ai-cv-square ai-3x" style="font-size: 1.0em;"></i></div>
+                        <div class="text">CV   </div>
+                    </a>
+                  </li>
+
+                <li>
+                  <a href="#researchnew">
+                    <div class="icon icon-lightbulb"><i class="ai ai-scirate-square ai-3x" style="font-size: 1.0em;"></i></div>
+                    <div class="text">Research Interests</div>
+                  </a>
+                </li> 
+
+                <li class="currentmenu">
+                  <a href="#publications">
+                    <div class="icon icon-file-text-alt"><i class="ai ai-arxiv-square ai-3x" style="font-size: 1.0em;"></i> </div>
+                    <div class="text">Publications/Preprints</div>
+                  </a>
+                </li> 
+           
+            </ul>
+        </div>        
+    <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 250px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 732px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+</div>
+
+
+
+<div id="main">
+
+    <div id="introduction" class="page home" data-pos="home">
+        <div class="pageheader">            
+            <div class="headercontent">
+                <div class="section-container">
+
+                    <div class="row">
+                        <div class="col-sm-2 visible-sm"></div>
+                        <div class="col-sm-8 col-md-5">
+                            <div class="biothumb">
+                                <img alt="Physics" src="Rick.jpg" class="img-responsive" style="min-width:321px;">
+                                <div class="overlay" style="min-width:321px; padding:20px;">
+                                    <h1 class="">Zhian Jia</h1>
+                                    <ul class="list-unstyled">
+                                        <li>Department of Physics</li>
+                                        <li>National University of Singapore</li>
+                                    </ul>
+                                </div> 
+                            </div>
+
+                        </div>
+
                         
-                       <li><a href="https://polyidoit.github.io/jia/index.html">
-                        <h2>Home</h2></a></li>
-                       
-                       <li><a href="#Research">
-                        <h2>Research</h2></a></li>
-                        
-                       <li><a href="https://polyidoit.github.io/jia/teaching.html">
-                               <h2>Teaching</h2></a></li>
-                             
-                       <li><a href="https://polyidoit.github.io/jia/miscellanea.html">
-                               <h2>Miscellanea</h2></a></li>
-                       
-                       <li><a href="https://polyidoit.github.io/jia/Jia.html"><h2>中文主页</h2></a></li>
-                    
-                    </ul>
-                </nav>
-            </header>
+                        <div class="clearfix visible-sm visible-xs"></div>
+                        <!--Change from md-7 to md-6 to prevent overflow beneath sliding page -->
+                        <div class="col-sm-12 col-md-6">
+                            <h3 class="title">Theoretical Physics</h3>
+                            <p>I am currently a Research Fellow at <a href="https://www.quantumlah.org/" target="_blank">Centre for Quantum Technologies</a>, <a here="https://www.nus.edu.sg/">National University of Singapore</a>.</p>
+                            <p>My researh focused on the quantum information theory, quantum computation theory and topologial order.</p>
+                        </div>  
+
+                    </div>
+                </div>        
+            </div>
+        </div>
+
+
+        <div class="pagecontents">
+            <div class="section color-1">     
+                <div class="section-container">
+                    <div class="col-md-10 col-md-offset-1">
+                    <h2 class="title text-center">Physics and Mathematicas</h2>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                        <div class="col-sm-1 col-md-1 col-md-offset-1">
+                            <ul class="list-unstyled" align="right">
+                                <li><strong><i class="icon-fixed-width icon-phone"></i></strong></li>
+                                <li><strong><i class="icon-fixed-width icon-mobile-phone"></i></strong></li>
+                                <li><strong><i class="icon-fixed-width icon-envelope"></i></strong></li>
+                                <li><strong><i class="icon-fixed-width icon-skype"></i></strong></li>
+                                <li><strong><i class="icon-fixed-width icon-twitter"></i></strong></li>
+                                <li><strong><i class="icon-fixed-width icon-rss"></i></strong></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <ul class="list-unstyled">
+                                <li> Topological order, TQFT, Chern-Simons theory</li>
+                                <li>CFT, RCFT</li>
+                                <li>Quantum information, quantum computation</li>
+                                <li>SPT, SET</li>
+                                <li> IT FROM QUBIT</li>
+                                <li> AdS/CFT, AdS/CMT</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-1 col-md-1">
+                            <ul class="list-unstyled" align="right">
+                                <li><strong><i class="icon-fixed-width icon-map-marker"></i></strong></li>
+                                <li><strong><i class="icon-fixed-width icon-location-arrow"></i></strong></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <ul class="list-unstyled">
+                                <li>Tensor cateogory, Frobenius algebra</li>
+                                <li>Vertex operator algebra</li>
+                                <li>Functional analysis, operator algebra, convex analysis, finite geometry</li>
+                                <li>Group cohomology, higher category</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div id="cv" class="page" data-pos="p1" style="z-index: 0; left: 100%;">
+        <div class="pageheader">
+            <div class="headercontent">
+                <div class="section-container">
+                    <div class="row">
+                        <div class="col-sm-12 visible-sm"></div>
+                        <div class="clearfix visible-sm visible-xs"></div>
+                            <h3 class="title">Curriculum Vitae</h3>
+                            <h4>Please <a href="https://polyidoit.github.io/jia/CV_Jia.pdf" target="_blank">click here</a> for a full pdf version of my CV (updated intermittently)</h4>
+                    </div>    
+                </div>
+            </div>        
+        </div>
+
+
+        <div class="pagecontents">
+
+            <div class="section color-1">
+                <div class="section-container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="title text-center">
+                                <h3>Intro</h3>
+                            </div>
+                            <ul class="timeline">
+
+                                <li class="open">
+                                    <div class="date">Coming soon</div>
+                                    <div class="circle"></div>
+                                    <div class="data">
+                                        <div class="subject">Comming soon</div>
+                                        <div class="text row open" style="display: block;">
+                                            <div class="col-md-12">
+                                                <p>coming soon.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="section color-2">
+                <div class="section-container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1">
+                            <div class="title text-center">
+                                <h3>Academic Experience</h3>
+                            </div>
+                            <ul class="ul-dates">
+                                <li>
+                                    <div class="dates">
+                                        <span>present</span>
+                                        <span>2021</span>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Research Fellow</h4>
+                                        <p align="left"><em>National University of Singapore</em>, <em>Centre for Quantum Technologies</em></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dates">
+                                        <span>2021</span>
+                                        <span>2015</span>
+                                    </div>
+                                    <div class="content">
+                                        <h4>PhD</h4>
+                                        <p align="left"><em>University of Science and Technology of China</em>, <em>CAS Key Lab of Quantum Information</em>, <em>School of Physical Sciences</em></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dates">
+                                        <span>2019</span>
+                                        <span>2018</span>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Visiting Scholar</h4>
+                                        <p align="left"><em>University of California, Santa Barbara</em>, Department of Mathematicas</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dates">
+                                        <span>2018</span>
+                                        <span>2017</span>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Visiting PhD</h4>
+                                        <p align="left"><em>Tsinghua University</em>, Yau Mathematical Sciences Center</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dates">
+                                        <span>2015</span>
+                                        <span>2011</span>
+                                    </div>
+                                    <div class="content">
+                                        <h4>undergraduate</h4>
+                                        <p align="left"><em>Central South University</em>, School of Physics and Electronics</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="title text-center">
+                                <h3>Education</h3>
+                            </div>
+                            <ul class="ul-card">
+                                <li>
+                                    <div class="dy">
+                                        <span class="degree">Ph.D.</span>
+                                        <span class="year">2021</span>
+                                    </div>
+                                    <div class="description">
+                                        <p>Ph.D. in Physics</p>
+                                        <p class="where">University of Science and Technology of China</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dy">
+                                        <span class="degree">B.S.</span><span class="year">2011</span>
+                                    </div>
+                                    <div class="description">
+                                        <p>Physics</p>
+                                        <p class="where">Central South University</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>    
+                    </div>
+                    <div class="section color-1">
+                        <div class="section-container">
+                            <div class="row">
+                                <div class="text row col-md-10 col-md-offset-1">
+                                    <h3>Still crazy after all these years.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </div>
 
 
-	<!-- Research -->
-	<div class="work section second" id="Research">
-  <div class="container">
-		  <h1>Research</h1>
-   <HR>
-    <h2><i class="ai ai-researcherid-square ai-3x" style="font-size: 1.0em;"></i> Research Interests</h2>
-   I have interests in both theoretical physics and mathematics.
-    <P><B><i class="ai ai-coursera-square ai-3x" style="font-size: 1.0em;"></i>  Mathematics: </B></P>          
-			   <ul>
-              <li>Quantum algebra and quantum topology;</li>
-         
-              <li>Topological quantum field theory and Topological string theory;</li>
-	       </ul>
-	    <P><B> <i class="ai ai-scirate-square ai-3x" style="font-size: 1.0em;"></i>   Physics: </B></P>		
-          <ul>
-				<li>Quantum foundations, quantum information and quantum computation theory;</li>
-                <li>Quantum phases, topological order;</li>
-                <li>AdS/CFT duality.</li>
-			    </ul>
-          <HR>
-    <h2><i class="ai ai-semantic-scholar-square ai-3x" style="font-size: 1.0em;"></i> Preprints &amp; Publications   </h2>        
-    Many of my preprints/publications are now accessible on arxiv: <a href="https://arxiv.org/a/jia_z_2.html">ArXiv Page</a>.
-   See also on my <a href="https://scholar.google.com/citations?user=oOd5cjEAAAAJ&hl=en">google scholar page</a>.
-      <ul>
 
-       <li> Z. Jia, Dagomir Kaszlikowski, Sheng Tan, Boundary and domain wall theories of 2d
-        generalized quantum double model, <a href="https://polyidoit.github.io/lecnotes/QDmodelHopf.pdf">[PDF]</a>, <a href="https://arxiv.org/abs/2207.03970">[arXiv:2207.03970]
-        </a>.</li>
 
-       <li> Lu Wei, Z. Jia, Dagomir Kaszlikowski, Sheng Tan, Antilinear superoperator and quantum geometric invariance for higher-dimensional quantum systems, <a href=" https://arxiv.org/abs/2202.10989">[arXiv:2202.10989]</a> </li>
-      
-       <li>Z. Jia, Dagomir Kaszlikowski, Electric-magnetic duality of Z2 symmetry enriched cyclic Abelian lattice gauge theory, <a href=" https://arxiv.org/abs/2201.12361">[arXiv:2201.12361]</a></li>
+    <div id="researchnew" class="page" data-pos="p1" style="z-index: 0; left: 100%;">
+        <div class="pageheader">
 
-       <li>Huan Cao, Ning-ning Wang, Z. Jia, Chao Zhang, Yu Guo, Bi-Heng Liu, Yun-Feng Huang, Chuan-Feng Li, Guang-Can Guo, Experimental demonstration of indefinite causal order induced quantum heat extraction,  <a href=" https://arxiv.org/abs/2101.07979">[arXiv:2101.07979]</a> </li>
+            <div class="headercontent">
 
-       <li>Z. Jia, Lu We, Yu-Chun Wu, Guang-Can Guo, Quantum Advantages of Communication Complexity from Bell Nonlocality, <a href="https://www.mdpi.com/1099-4300/23/6/744/htm">Entropy 23 (6), 744 (2021)</a>, <a href=" https://arxiv.org/abs/2004.05098">[arXiv:2004.05098]</a>   </li> 
+                <div class="section-container">
+                    <h2 class="title">Research Interests</h2>
 
-       <li> Z. Jia, Rui Zhai, Shang Yu, Yu-Chun Wu, and Guang-Can Guo, Hierarchy of Genuine Multipartite Quantum Correlations, <a href="https://link.springer.com/article/10.1007/s11128-020-02922-z"> Quantum Inf Process 19, 419 (2020)</a>,  <a href=" https://arxiv.org/abs/1711.04664 ">[arXiv:1711.04664]</a>     </li>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p align="justify">My research focused quantum information and quantum computation, topological order and TQFT</p>
+                            <p align="justify">Mathematicas and physics.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="subtitle text-center">
+                                <h3>Research Interests</h3>
+                            </div>
+                            <ul class="ul-boxed list-unstyled">
+                                <li>Quantum Information theory</li>
+                                <li>Topological Order  &amp; TQFT</li>
+                                <li>Quantum Computation theory</li>
+                                <li>Tensor Network &amp; Neural Network</li>
+                                <li>Quantum Machine Learning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-       <li> Yu Meng, Shang Yu, Z. Jia, Yi-Tao Wang, Zhi-Jin Ke, Wei Liu, Zhi-Peng Li, Yuan-Ze Yang, Hang Wang, Yu-Chun Wu, Jian-Shun Tang, Chuan-Feng Li, Guang-Can Guo, Environment-induced sudden change of coherence in quantum systems, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.102.042415">Phys. Rev. A 102, 042415 (2020)</a> </li>
+        <div class="pagecontents">
 
-       <li> Z. Jia, Lu We, Yu-Chun Wu, Guang-Can Guo, Guo-Ping Guo, Entanglement Area Law for Shallow and Deep Quantum Neural Network States, <a href="https://iopscience.iop.org/article/10.1088/1367-2630/ab8262">New J. Phys. 22 053022 (2020)</a> , <a href=" https://arxiv.org/abs/1907.11333 ">[arXiv:1907.11333]</a>    </li>
+            <div class="section color-1">
+                <div class="section-container">
+                    <div class="title text-center">
+                        <h3>Current Research Projects</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>A list of my current research directions.<br><br></p>
+                            <ul class="ul-withdetails">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-3">
+                                            <div class="image">
+                                                <img alt="image" src="TQFT_intro.png" class="img-responsive">
+                                                <div class="imageoverlay">
+                                                    <i class="icon icon-search"></i>
+                                                </div>
 
-       <li> Z. Jia, Biao Yi, Rui Zhai, Yu-Chun Wu, Guang-Can Guo and Guo-Ping Guo, Quantum Neural Network States: A Brief Review of Methods and Applications, <a href="https://onlinelibrary.wiley.com/doi/10.1002/qute.201800077"> Adv. Quantum Technol.2019, 1800077 (2019)</a> , <a href=" https://arxiv.org/abs/1808.10601 ">[arXiv:1808.10601]</a>  </li>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-9">
+                                            <div class="meta">
+                                                <h3>Topological Ordered and TQFT</h3>
+                                                <p>Chern-Simons theory, Quantum Hall effect, SPT/SET, etc.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <p>Coming soon...</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-3">
+                                            <div class="image">
+                                                <img alt="image" src="TN_intro.png" class="img-responsive">
+                                                <div class="imageoverlay">
+                                                    <i class="icon icon-search"></i>
+                                                </div>
 
-       <li> Z. Jia, Yuan-Hang Zhang, Yu-Chun Wu, Liang Kong, Guang-Can Guo, and Guo-Ping Guo, Efficient Machine Learning Representations of Surface Code with Boundaries, Defects, Domain Walls and Twists, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012307">Phys. Rev. A 99, 012307 (2019)</a>  , <a href=" https://arxiv.org/abs/1802.03738 ">[arXiv:1802.03738]</a> </li>
-
-       <li> Yuan-Hang Zhang, Z. Jia, Yu-Chun Wu, and Guang-Can Guo, An Efficient Algorithmic Way to Construct Boltzmann Machine Representations for Arbitrary Stabilizer Code, <a href=" https://arxiv.org/abs/1809.08631 ">[arXiv:1809.08631]</a> </li>
-
-       <li> Z. Jia, Rui Zhai, Bai-Chu Yu, Yu-Chun Wu, and Guang-Can Guo, Entropic No-Disturbance as a Physical Principle, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.97.052128">Phys. Rev. A 97, 052128 (2018)</a> , <a href=" https://arxiv.org/abs/1803.07925  ">[arXiv:1803.07925]</a>  </li>
-
-       <li> Shang Yu, Chang-Jiang Huang, Jian-Shun Tang, Z. Jia, Yi-Tao Wang, Zhi-Jin Ke, Wei Liu, Zong-Quan Zhou, Ze-Di Cheng, Jin-Shi Xu, Yu-Chun Wu, Yuan-Yuan Zhao, Guo-Yong Xiang, Chuan-Feng Li, Guang-Can Guo, Gael Sentís, and Ramon Muñoz-Tapia, Experimentally Detecting a Quantum Change Point via Bayesian Inference, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.040301">Phys. Rev. A 98, 040301(R) (2018)</a>, <a href=" https://arxiv.org/abs/1801.07508  ">[arXiv:1801.07508]</a>  </li>
-
-       <li>Bai-Chu Yu, Z. Jia, Yu-Chun Wu, and Guang-Can Guo, Geometric Local Hidden State Model for Some Two-qubit States, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.052345" > Phys. Rev. A 98, 052345 (2018)</a>, <a href=" https://arxiv.org/abs/1710.06704  ">[arXiv:1710.06704]</a> </li>
-
-       <li> Bai-Chu Yu, Z. Jia, Yu-Chun Wu, and Guang-Can Guo, Geometric Steering Criterion for Two-qubit States, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.97.012130 " >Phys. Rev. A 97, 012130 (2018)</a>, <a href=" https://arxiv.org/abs/1710.06691  ">[arXiv:1710.06691]</a>   </li>
-
-       <li> Z. Jia, Gao-Di Cai, Yu-Chun Wu, Guang-Can Guo, and Adán Cabello, The Exclusivity Principle Determines the Correlation Monogamy, <a href=" https://arxiv.org/abs/1707.03250  ">[arXiv:1707.03250] </a></li>
-
-       <li> Z. Jia, Yu-Chun Wu, and Guang-Can Guo, Characterizing nonlocal correlations via universal uncertainty relations, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.96.032122"> Phys. Rev. A 96, 032122(2017)</a>, <a href=" https://arxiv.org/abs/1705.08825 ">[arXiv:1705.08825]</a>  </li>
-
-       <li> Z. Jia, Yu-Chun Wu, and Guang-Can Guo, Monogamy Relation in No-disturbance Theories, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.012111">Phys. Rev. A 94, 012111(2016)</a>, <a href=" https://arxiv.org/abs/1705.08825 ">[arXiv:1605.05148]</a>    </li>
-
-       <li> Yan Shao, Fang-Ping Ouyang, Sheng-Lin Peng, Qi Liu, Z. Jia, Hui Zou, First-Principles Calculations of Electronic Properties of Defective Armchair MoS2 Nanoribbons, <a href="https://www.ingentaconnect.com/content/apcs/apcs/2015/00000031/00000011/art00010">Acta Phys.-Chim. Sin., 2015,31 (11): 2083-2090 (2015)</a>  </li>
-
-      </ul>
-      <HR>
-
-    <h2><i class="ai ai-obp-square ai-3x" style="font-size: 1.0em;"></i>  Lecture notes:</h2>
-    <table class="papers">
-    <tr>
-    <td width="217">
-    <div onClick="toggle('RBMconstruction');">•  Lecture notes of string theory (2020) </div>
-    </td>
-    <td width="130"><a href="https://polyidoit.github.io/lecnotes/String.pdf">pdf</a></td>
-    </tr>
-
-    <tr style="display: none;" id="abs-RBMconstruction">
-    <td colspan="5" style="background-color: white; padding-left: 25px; padding-top: 10px; padding-bottom: 10px;">In construction.</td>
-    </tr>
-              
-    <tr>
-    <td>
-    <div onClick="toggle('neural');">• Quantum information theory lecture notes (2021)</div>
-    </td>
-    <td><a href="https://polyidoit.github.io/lecnotes/QIbook.pdf">pdf</a></td>
-    </tr>
-
-    <tr style="display: none;" id="abs-neural">
-    <td colspan="5" style="background-color: white; padding-left: 25px; padding-top: 10px; padding-bottom: 10px;">In construction.</td>
-    </tr>
-    </table>
-    
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-9">
+                                            <div class="meta">
+                                                <h3>Tensor Network &amp; Neural Network</h3>
+                                                <p>Efficient methods for simulating complex many-body quantum systems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <p>Coming soon...</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
     </div>
+
+    <div id="publications" class="page currentpage" data-pos="p2" style="z-index: 500; left: 4%;">
+        <div class="page-container">
+            <div class="pageheader">
+                <div class="headercontent">
+                    <div class="section-container">
+
+                        <h2 class="title">Publications and preprints</h2>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Many of my preprints/publications are now accessible on <a href="https://arxiv.org/a/jia_z_2.html">arXiv</a>. A more comprehensive list is on my <a href="https://scholar.google.com/citations?user=oOd5cjEAAAAJ&hl=en">google scholar page</a>.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+   
+            <div class="pagecontents">
+
+                <div class="section color-1" id="filters">
+                    <div class="section-container">
+                        <div class="row">
+                            <div class="col-md-2" id="sort">
+                                <span>Filter:</span>
+                            </div>
+                            <div class="col-md-6">
+                                <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+                                    <option class="filter" value="all" selected>All Topics</option>
+                                    <option class="filter" value="QECC">QECC</option>
+                                    <option class="filter" value="QF">Quantum Foundations</option>
+                                    <option class="filter" value="QI">Quantum Information</option>
+                                    <option class="filter" value="TN">Tensor/Neural Networks</option>
+                                    <option class="filter" value="TO">Topological Order</option>
+                                    <option class="filter" value="TQC">TQC</option>
+                                    <option class="filter" value="TQFT">TQFT</option>
+                                    <option class="filter" value="misc">Miscellaneous</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4" id="sort">
+                                <span>Sort by date:</span>
+                                <div class="btn-group pull-right"> 
+
+                                    <button type="button" data-sort="data-year" data-order="desc" class="sort btn btn-default"><i class="fa fa-arrow-up" aria-hidden="true"></i> </button>
+                                    <button type="button" data-sort="data-year" data-order="asc" class="sort btn btn-default"><i class="fa fa-arrow-down" aria-hidden="true"></i>  </button>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="section color-2" id="pub-grid">
+                    <div class="section-container">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="pitems">
+
+                                    <!-- 2022 arXiv posts -->
+                                    <div>
+                                        
+                                    <!-- Boudary of QD -->
+                                    <div class="item mix TO TQFT mix_all" data-year="2022" style="display: block;  opacity: 1;">
+                                        <div class="pubmain">
+                                            <div class="pubassets">
+                                                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                                                        2022    
+                                                    </strong>
+                                                </span> </a>
+                                            </div>
+                                            <!--<div class="col-sm-3">
+                                            <div class="image">
+                                                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+                                            </div>
+                                            </div>-->
+                                            <h4 class="pubtitle">Boundary and domain wall theories of 2d generalized quantum double model</h4>
+                                            <div class="pubauthor">Zhian Jia, Dagomir Kaszlikowski, Sheng Tan</div>
+                                            <div class="pubcite">preprint<br>
+                                                <a href="https://arxiv.org/abs/2207.03970" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:2207.03970]</a>
+                                            </div>
+                                        </div>
+                                        <div class="pubdetails">
+                                            <h4>Abstract</h4>
+                                            <p>The generalized quantum double lattice realization of 2d topological orders based on Hopf algebras is discussed in this work. Both left-module and right-module constructions are investigated. The ribbon operators and the classification of topological excitations based on the representations of the quantum double of Hopf algebras are discussed. To generalize the model to a 2d surface with boundary and surface defect, we present a systematical construction of the boundary Hamiltonian and domain wall Hamiltonian using Hopf algebra pairing and generalized quantum double construction. Via the Hopf tensor network representation of the quantum many-body states, we solve the ground state of the model in the presence of the boundary and domain wall.</p>
+                                        </div>
+                                    </div>
+                                    
+
+
+                                <!-- Antilinear superoperator -->   
+                                    <div class="item mix QF QI mix_all" data-year="2022" style="display: block;  opacity: 1;">
+                                        <div class="pubmain">
+                                            <div class="pubassets">
+                                                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                                                        2022    
+                                                    </strong>
+                                                </span> </a>
+                                            </div>
+                                            <!--<div class="col-sm-3">
+                                            <div class="image">
+                                                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+                                            </div>
+                                            </div>-->
+                                            <h4 class="pubtitle">Antilinear superoperator and quantum geometric invariance for higher-dimensional quantum systems</h4>
+                                            <div class="pubauthor">Lu Wei, Zhian Jia, Dagomir Kaszlikowski, Sheng Tan</div>
+                                            <div class="pubcite">preprint<br>
+                                                <a href="http://www.arxiv.org/abs/2202.10989" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:2202.10989]</a>
+                                            </div>
+                                        </div>
+                                        <div class="pubdetails">
+                                            <h4>Abstract</h4>
+                                            <p>We present an investigation of the antilinear superoperators and their applications in studying higher-dimensional quantum systems. The antilinear superoperators are introduced and various properties are discussed. We study several crucial classes of antilinear superoperators, including antilinear quantum channels, antilinearly unital superoperators, antiunitary superoperators and the generalized theta-conjugation. Then using the Bloch representation, we present a systematic investigation of the quantum geometric transformations of higher-dimensional quantum systems. By choosing different generalized Θ-conjugation, different metrics for the space of Bloch space-time vectors are obtained, including the Euclidean metric and Minkowskian metric. Then using these geometric structures, we investigate the entanglement distribution over a multipartite system restricted by quantum geometric invariance.</p>
+                                        </div>
+                                    </div>
+
+
+
+                                     <!-- EM duality -->
+                                    <div class="item mix TQFT TO mix_all" data-year="2022" style="display: block;  opacity: 1;">
+                                        <div class="pubmain">
+                                            <div class="pubassets">
+                                                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                                                        2022    
+                                                    </strong>
+                                                </span> </a>
+                                            </div>
+                                            <!--<div class="col-sm-3">
+                                            <div class="image">
+                                                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+                                            </div>
+                                            </div>-->
+                                            <h4 class="pubtitle">Electric-magnetic duality of  symmetry enriched cyclic Abelian lattice gauge theory</h4>
+                                            <div class="pubauthor">Zhian Jia, Dagomir Kaszlikowski</div>
+                                            <div class="pubcite">preprint<br>
+                                            <a href="http://www.arxiv.org/abs/2201.12361" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:2201.12361]</a>
+                                            </div>
+                                        </div>
+                                        <div class="pubdetails">
+                                            <h4>Abstract</h4>
+                                            <p>Kitaev's quantum double model is a lattice gauge theoretic realization of Dijkgraaf-Witten topological quantum field theory (TQFT), its topologically protected ground state space has broad applications for topological quantum computation and topological quantum memory. We investigate the  symmetry enriched generalization of the model for the cyclic Abelian group in a categorical framework and present an explicit Hamiltonian construction. This model provides a lattice realization of the  symmetry enriched topological (SET) phase. We discuss in detail the categorical symmetry of the phase, for which the electric-magnetic (EM) duality symmetry is a special case. The aspects of symmetry defects are investigated using the -crossed unitary braided fusion category (UBFC). By determining the corresponding anyon condensation, the gapped boundaries and boundary-bulk duality are also investigated. Then we carefully construct the explicit lattice realization of EM duality for these SET phases. Finally, their potential applications in topological quantum computation and topological memory theories are discussed.</p>
+                                        </div>
+                                    </div>
+
+
+                                       <!-- causal QR -->
+                                       <div class="item mix QI mix_all" data-year="2021" style="display: block;  opacity: 1;">
+                                        <div class="pubmain">
+                                            <div class="pubassets">
+                                                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                                                        2021    
+                                                    </strong>
+                                                </span> </a>
+                                            </div>
+                                            <!--<div class="col-sm-3">
+                                            <div class="image">
+                                                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+                                            </div>
+                                            </div>-->
+                                            <h4 class="pubtitle">Quantum simulation of indefinite causal order induced quantum refrigeration
+                                            </h4>
+                                            <div class="pubauthor">Huan Cao, Ning-Ning Wang, Zhian Jia, Chao Zhang, Yu Guo, Bi-Heng Liu, Yun-Feng Huang, Chuan-Feng Li, and Guang-Can Guo</div>
+                                            <div class="pubcite">
+                                                 <a href="#"><i class="fa fa-book" aria-hidden="true"></i> PRR</a><br>
+                                                <a href="http://www.arxiv.org/abs/2101.07979" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:2101.07979]</a>
+                                            </div>
+                                        </div>
+                                        <div class="pubdetails">
+                                            <h4>Abstract</h4>
+                                            <p>Communication games are crucial tools for investigating the limitations of physical theories. The communication complexity (CC) problem is a typical example, for which several distributed parties attempt to jointly calculate a given function with limited classical communications. In this work, we present a method to construct CC problems from Bell tests in a graph-theoretic way. Starting from an experimental compatibility graph and the corresponding Bell test function, a target function that encodes the information of each edge can be constructed; then, using this target function, we can construct a CC function, and by pre-sharing entangled states, its success probability exceeds that of the arbitrary classical strategy. The non-signaling protocol based on the Popescu–Rohrlich box is also discussed, and the success probability in this case reaches one.</p>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                     <!-- Bell CCP -->
+                                     <div class="item mix QI QF mix_all" data-year="2021" style="display: block;  opacity: 1;">
+                                        <div class="pubmain">
+                                            <div class="pubassets">
+                                                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                                                    <!-- a strong element with the custom content, in this case a number -->
+                                                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                                                        2021    
+                                                    </strong>
+                                                </span> </a>
+                                            </div>
+                                            <!--<div class="col-sm-3">
+                                            <div class="image">
+                                                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+                                            </div>
+                                            </div>-->
+                                            <h4 class="pubtitle">Quantum advantages of communication complexity from Bell nonlocality</h4>
+                                            <div class="pubauthor">Zhih-Ahn Jia, Lu Wei, Yu-Chun Wu, Guang-Can Guo</div>
+                                            <div class="pubcite">
+                                                 <a href="https://www.mdpi.com/1099-4300/23/6/744"><i class="fa fa-book" aria-hidden="true"></i> Entropy 2021, 23(6), 744</a><br>
+                                                <a href="http://www.arxiv.org/abs/2004.05098" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:2004.05098]</a>
+                                            </div>
+                                        </div>
+                                        <div class="pubdetails">
+                                            <h4>Abstract</h4>
+                                            <p>Communication games are crucial tools for investigating the limitations of physical theories. The communication complexity (CC) problem is a typical example, for which several distributed parties attempt to jointly calculate a given function with limited classical communications. In this work, we present a method to construct CC problems from Bell tests in a graph-theoretic way. Starting from an experimental compatibility graph and the corresponding Bell test function, a target function that encodes the information of each edge can be constructed; then, using this target function, we can construct a CC function, and by pre-sharing entangled states, its success probability exceeds that of the arbitrary classical strategy. The non-signaling protocol based on the Popescu–Rohrlich box is also discussed, and the success probability in this case reaches one.</p>
+                                        </div>
+                                    </div>
+
+
+
+       <!-- Hierarchy -->
+       <div class="item mix QI QF mix_all" data-year="2020" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2020    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Hierarchy of genuine multipartite quantum correlations</h4>
+            <div class="pubauthor">Zhih-Ahn Jia, Rui Zhai, Shang Yu, Yu-Chun Wu, Guang-Can Guo</div>
+            <div class="pubcite">
+                 <a href="https://link.springer.com/article/10.1007/s11128-020-02922-z"><i class="fa fa-book" aria-hidden="true"></i> Quantum Inf Process 19, 419 (2020)</a><br>
+                <a href="http://www.arxiv.org/abs/1711.04664" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1711.04664]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>Classifying states which exhibiting different statistical correlations is among the most important problems in quantum information science and quantum many-body physics. In bipartite case, there is a clear hierarchy of states with different correlations: total correlation (T) ⊋ discord (D) ⊋ entanglement (E) ⊋ steering (S) ⊋ Bell~nonlocality (NL). However, very little is known about genuine multipartite correlations (GM) for both conceptual and technical difficulties. In this work, we show that, for any N-partite qudit states, there also exist such a hierarchy: genuine multipartite total correlations (GMT) ⊇ genuine multipartite discord (GMD) ⊇ genuine multipartite entanglement (GME) ⊇ genuine multipartite steering (GMS) ⊇ genuine multipartite nonlocality (GMNL). Furthermore, by constructing precise states, we show that GMT, GME and GMS are inequivalent with each other, thus GMT ⊋ GME ⊋ GMS.</p>
+        </div>
+        </div>
+
+
+
+       <!-- Enviroment -->
+       <div class="item mix QI mix_all" data-year="2020" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2020    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Environment-induced sudden change of coherence in quantum systems</h4>
+            <div class="pubauthor">Yu Meng, Shang Yu, Zhih-Ahn Jia, Yi-Tao Wang, Zhi-Jin Ke, Wei Liu, Zhi-Peng Li, Yuan-Ze Yang, Hang Wang, Yu-Chun Wu, Jian-Shun Tang, Chuan-Feng Li, Guang-Can Guo</div>
+            <div class="pubcite">
+                 <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.102.042415"><i class="fa fa-book" aria-hidden="true"></i> Phys. Rev. A 102, 042415 (2020)</a><br>
+                <a href="#" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:NA]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>Manipulating dynamical evolution is an important task in quantum information. The sudden death phenomenon (SDP), which is predicted to be unattainable beyond entanglement [T. Yu and J. H. Eberly, Sudden death of entanglement, Science 323, 598 (2009)], would be an especially surprising feature in quantum coherence. In this paper, we modulate the spatial modes of photons and build a spatially inclined channel using a series of specially made quartz plate pairs. Within this channel, sudden changes in coherence occur in open-quantum systems. We, then, describe the SDP within a general theoretical framework of sudden quantum-coherence changes and by defining the nth order sudden coherence change. Moreover, by adding non-Markovian noise, we find that coherence can rebirth after a sudden death. We further compare the sudden change features in coherence and quantum entanglement. We find that both coherence and entanglement perform identical dynamical processes upon Bell diagonal states, although their dynamical characteristics change when the initial state is partially entangled. Our results provide insights into the sudden change phenomena of quantum correlations beyond entanglement along with intriguing perspectives on quantum coherence dynamics.</p>
+        </div>
+        </div>
+
+
+
+
+       <!-- Area law -->
+       <div class="item mix QI TO TN mix_all" data-year="2020" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2020    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Entanglement area law for shallow and deep quantum neural network states</h4>
+            <div class="pubauthor">Zhih-Ahn Jia, Lu Wei, Yu-Chun Wu, Guang-Can Guo, Guo-Ping Guo</div>
+            <div class="pubcite">
+                 <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.102.042415"><i class="fa fa-book" aria-hidden="true"></i> Phys. Rev. A 102, 042415 (2020)</a><br>
+                <a href="https://arxiv.org/abs/1907.11333" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1907.11333]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>A study of the artificial neural network representation of quantum many-body states is presented. The locality and entanglement properties of states for shallow and deep quantum neural networks are investigated in detail. By introducing the notion of local quasi-product states, for which the locally connected shallow feed-forward neural network states and restricted Boltzmann machine states are special cases, we show that Rényi entanglement entropies of all these states obey the entanglement area law. Besides, we also investigate the entanglement features of deep Boltzmann machine states and show that locality constraints imposed on the neural networks make the states obey the entanglement area law. Finally, as an application, we apply the notion of Rényi entanglement entropy to understand the power of neural networks, and show that image classification problems can be efficiently solved must obey the area law.</p>
+        </div>
+        </div>
+
+
+
+      <!-- Area law -->
+      <div class="item mix QI QECC TN TO mix_all" data-year="2019" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2019    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Efficient machine-learning representations of a surface code with boundaries, defects, domain walls, and twists</h4>
+            <div class="pubauthor">Zhih-Ahn Jia, Yuan-Hang Zhang, Yu-Chun Wu, Liang Kong, Guang-Can Guo, Guo-Ping Guo</div>
+            <div class="pubcite">
+                 <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.012307"><i class="fa fa-book" aria-hidden="true"></i> Phys. Rev. A 99, 012307 (2019)</a><br>
+                <a href="https://arxiv.org/abs/1802.03738" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1802.03738]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>Machine learning representations of many-body quantum states have recently been introduced as an ansatz to describe the ground states and unitary evolutions of many-body quantum systems. We explore one of the most important representations, restricted Boltzmann machine (RBM) representation, in stabilizer formalism. We give the general method of constructing RBM representation for stabilizer code states and find the exact RBM representation for several types of stabilizer groups with the number of hidden neurons equal or less than the number of visible neurons, which indicates that the representation is extremely efficient. Then we analyze the surface code with boundaries, defects, domain walls and twists in full detail and find that all the models can be efficiently represented via RBM ansatz states. Besides, the case for Kitaev's $D(\Zb_d)$ model, which is a generalized model of surface code, is also investigated.</p>
+        </div>
+        </div>
+
+
+
+
+
+
+      <!-- Neural nets -->
+      <div class="item mix QI QECC TN TO mix_all" data-year="2019" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2019    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Quantum neural network states: a brief review of methods and applications</h4>
+            <div class="pubauthor">Zhih-Ahn Jia, Biao Yi, Rui Zhai, Yu-Chun Wu, Guang-Can Guo, Guo-Ping Guo</div>
+            <div class="pubcite">
+                 <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/qute.201800077"><i class="fa fa-book" aria-hidden="true"></i> Adv. Quantum Technol., 2: 1800077. (2019)</a><br>
+                <a href="https://arxiv.org/abs/1808.10601" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1808.10601]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>One of the main challenges of quantum many-body physics is that the dimensionality of the Hilbert space grows exponentially with the system size, which makes it extremely difficult to solve the Schrödinger equations of the system. But typically, many physical systems have a simplified internal structure which makes the parameters needed to characterize their ground states exponentially smaller. This makes many numerical methods possible in capture the physics of the system. Among these modern numerical techniques, neural networks, which show great power in approximating functions and extracting features of the big data, are now attracting many interests. Neural network representation of quantum many-body states shows great potential in solving some traditionally difficult quantum problems involving large number of freedoms. In this work, we briefly review the progress of using the artificial neural network to build quantum many-body ansatz states. We take Boltzmann machine representation as a prototypical example to illustrate various aspects of neural network representation of quantum many-body states. We first briefly review the classical neural networks, then we illustrate how to use neural networks to represent quantum states and density operators. Some physical properties of the neural network states, including entanglement features, representational power, and the relation with tensor network states, are discussed. For applications, we briefly review the progress of many-body calculating based on neural network states, neural network state approach to tomography, and also the classical simulation of quantum computing based on Boltzmann machine states. At the end of the work, some outlooks and open problems are given.</p>
+        </div>
+        </div>
+
+
+      <!-- steering -->
+      <div class="item mix QI QF mix_all" data-year="2018" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2018    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Geometric local-hidden-state model for some two-qubit states</h4>
+            <div class="pubauthor">Bai-Chu Yu, Zhih-Ahn Jia, Yu-Chun Wu, Guang-Can Guo</div>
+            <div class="pubcite">
+                 <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.052345"><i class="fa fa-book" aria-hidden="true"></i> Phys. Rev. A 98, 052345 (2018)</a><br>
+                <a href="https://arxiv.org/abs/1710.06704" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1710.06704]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>Adopting the geometric description of steering assemblages and the local-hidden-state (LHS) model, we construct the optimal LHS model for some two-qubit states under continuous projective measurements and obtain a sufficient steering criterion for all two-qubit states. Using the criterion, we show more two-qubit states that are asymmetric in the steering scenario under projective measurements. Then we generalize the geometric description into higher-dimensional bipartite cases, calculate the steering bound of two-qutrit isotropic states, and discuss more general cases.</p>
+        </div>
+        </div>
+
+
+
+    <!-- change point -->
+    <div class="item mix QI mix_all" data-year="2018" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2018    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Experimentally detecting a quantum change point via Bayesian inference</h4>
+            <div class="pubauthor">Shang Yu, Chang-Jiang Huang, Jian-Shun Tang, Zhih-Ahn Jia, Yi-Tao Wang, Zhi-Jin Ke, Wei Liu, Xiao Liu, Zong-Quan Zhou, Ze-Di Cheng, Jin-Shi Xu, Yu-Chun Wu, Yuan-Yuan Zhao, Guo-Yong Xiang, Chuan-Feng Li, Guang-Can Guo, Gael Sentís, Ramon Muñoz-Tapia</div>
+            <div class="pubcite">
+                <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.040301"><i class="fa fa-book" aria-hidden="true"></i> Phys. Rev. A 98, 040301(R) (2018)</a><br>
+                <a href="https://arxiv.org/abs/1801.07508" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1801.07508]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>Detecting a change point is a crucial task in statistics that has been recently extended to the quantum realm. A source state generator that emits a series of single photons in a default state suffers an alteration at some point and starts to emit photons in a mutated state. The problem consists in identifying the point where the change took place. In this work, we consider a learning agent that applies Bayesian inference on experimental data to solve this problem. This learning machine adjusts the measurement over each photon according to the past experimental results finds the change position in an online fashion. Our results show that the local-detection success probability can be largely improved by using such a machine learning technique. This protocol provides a tool for improvement in many applications where a sequence of identical quantum states is required.
+            </p>
+        </div>
+        </div>
+
+
+
+
+
+
+     <!-- NNS QECC-->
+     <div class="item mix TN QECC mix_all" data-year="2018" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2018    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">An efficient algorithmic way to construct Boltzmann machine representations for arbitrary stabilizer code</h4>
+            <div class="pubauthor">Yuan-Hang Zhang, Zhian Jia, Yu-Chun Wu, Guang-Can Guo</div>
+            <div class="pubcite">
+                <a href="#"><i class="fa fa-book" aria-hidden="true"></i> NA</a><br>
+                <a href="https://arxiv.org/abs/1809.08631" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1809.08631]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>The restricted Boltzmann machine (RBM) has seen great success as a variational quantum state, but its representational power is far less understood. We analytically give the first proof that RBMs can exactly and efficiently represent stabilizer code states, a family of highly entangled states of great importance in the field of quantum error correction. Given the stabilizer generators, we present an efficient algorithm to compute the structure of the RBM, as well as the exact values of RBM parameters. This opens up a new perspective on the representational power of RBMs, justifying the success of RBMs in representing highly entangled states, and is potentially useful in the classical simulation of quantum error-correcting codes.</p>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+     <!-- Entropic Bell -->
+     <div class="item mix QF QI mix_all" data-year="2018" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2018    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Entropic no-disturbance as a physical principle</h4>
+            <div class="pubauthor">Zhih-Ahn Jia, Rui Zhai, Bai-Chu Yu, Yu-Chun Wu, Guang-Can Guo</div>
+            <div class="pubcite">
+                <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.97.052128"><i class="fa fa-book" aria-hidden="true"></i> Phys. Rev. A 97, 052128 (2018)</a><br>
+                <a href="https://arxiv.org/abs/1803.07925" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1803.07925]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>The celebrated Bell-Kochen-Specker no-go theorem asserts that quantum mechanics does not present the property of realism, the essence of the theorem is the lack of a joint probability distributions for some experiment settings. In this work, we exploit the information theoretic form of the theorem using information measure instead of probabilistic measure and indicate that quantum mechanics does not present such entropic realism neither. The entropic form of Gleason's no-disturbance principle is developed and it turns out to be characterized by the intersection of several entropic cones. Entropic contextuality and entropic nonlocality are investigated in depth in this framework. We show how one can construct monogamy relations using entropic cone and basic Shannon-type inequalities. The general criterion for several entropic tests to be monogamous is also developed, using the criterion, we demonstrate that entropic nonlocal correlations are monogamous, entropic contextuality tests are monogamous and entropic nonlocality and entropic contextuality are also monogamous. Finally, we analyze the entropic monogamy relations for multiparty and many-test case, which plays a crucial role in quantum network communication.</p>
+        </div>
+        </div>
+
+
+
+
+
+     <!-- Steering cri -->
+     <div class="item mix QI QF mix_all" data-year="2018" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2018    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Geometric steering criterion for two-qubit states</h4>
+            <div class="pubauthor">Bai-Chu Yu, Zhih-Ahn Jia, Yu-Chun Wu, Guang-Can Guo</div>
+            <div class="pubcite">
+                <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.97.012130"><i class="fa fa-book" aria-hidden="true"></i> Phys. Rev. A 97, 012130 (2018)</a><br>
+                <a href="https://arxiv.org/abs/1710.06691" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1710.06691]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>According to the geometric characterization of measurement assemblages and local hidden state (LHS) models, we propose a steering criterion which is both necessary and sufficient for two-qubit states under arbitrary measurement sets. A quantity is introduced to describe the required local resources to reconstruct a measurement assemblage for two-qubit states. We show that the quantity can be regarded as a quantification of steerability and be used to find out optimal LHS models. Finally we propose a method to generate unsteerable states, and construct some two-qubit states which are entangled but unsteerable under all projective measurements.</p>
+        </div>
+        </div>
+
+
+
+
+     <!-- UR-->
+     <div class="item mix QI QF mix_all" data-year="2017" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2017    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Characterizing Nonlocal Correlations via Universal Uncertainty Relations</h4>
+            <div class="pubauthor">Zhih-Ahn Jia, Yu-Chun Wu, Guang-Can Guo</div>
+            <div class="pubcite">
+                <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.96.032122"><i class="fa fa-book" aria-hidden="true"></i> Phys. Rev. A 96, 032122 (2017)</a><br>
+                <a href="https://arxiv.org/abs/1705.08825" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1705.08825]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>Characterization and certification of nonlocal correlations is one of the the central topics in quantum information theory. In this work, we develop the detection methods of entanglement and steering based on the universal uncertainty relations and fine-grained uncertainty relations. In the course of our study, the uncertainty relations are formulated in majorization form, and the uncertainty quantifier can be chosen as any convex Schur concave functions, this leads to a large set of inequalities, including all existing criteria based on entropies. We address the question that if all steerable states (or entangled states) can be witnessed by some uncertainty-based inequality, we find that for pure states and many important families of states, this is the case.</p>
+        </div>
+        </div>
+
+
+     <!-- EP -->
+     <div class="item mix QF mix_all" data-year="2017" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2017    
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">The Exclusivity Principle Determines the Correlation Monogamy</h4>
+            <div class="pubauthor">Zhih-Ahn Jia, Gao-Di Cai, Yu-Chun Wu, Guang-Can Guo, Adan Cabello</div>
+            <div class="pubcite">
+                <a href="#"><i class="fa fa-book" aria-hidden="true"></i> NA</a><br>
+                <a href="https://arxiv.org/abs/1707.03250 " target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1707.03250]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>Adopting the graph-theoretic approach to the correlation experiments, we analyze the origin of monogamy and prove that it can be recognised as a consequence of exclusivity principle(EP). We provide an operational criterion for monogamy: if the fractional packing number of the graph corresponding to the union of event sets of several physical experiments does not exceed the sum of independence numbers of each individual experiment graph, then these experiments are monogamous. As applications of this observation, several examples are provided, including the monogamy for experiments of Clauser-Horne-Shimony-Holt (CHSH) type, Klyachko-Can-Binicioğlu-Shumovsky (KCBS) type, and for the first time we give some monogamy relations of Swetlichny's genuine nonlocality. We also give the necessary and sufficient condition for several experiments to be monogamous: several experiments are monogamous if and only if the Lovász number the union exclusive graph is less than or equal to the sum of independence numbers of each exclusive graph.</p>
+        </div>
+        </div>
+
+
+
+
+
+             <!-- monogamy -->
+     <div class="item mix QF mix_all" data-year="2016" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2016   
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">Monogamy relation in no-disturbance theories</h4>
+            <div class="pubauthor">Zhih-Ahn Jia, Yu-Chun Wu, Guang-Can Guo</div>
+            <div class="pubcite">
+                <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.94.012111"><i class="fa fa-book" aria-hidden="true"></i> Phys. Rev. A 94, 012111 (2016)</a><br>
+                <a href="https://arxiv.org/abs/1605.05148 " target="_blank"><i class="fa fa-print" aria-hidden="true"></i> [arXiv:1707.03250]</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>The monogamy is a fundamental property of Bell nonlocality and contextuality. In this article, we studied the n-cycle noncontextual inequalities and generalized CHSH inequalities in detail and found the sufficient conditions for those inequalities to be hold. According to those conditions, we provide several kind of tradeoff relations: monogamy of generalized Bell inequalities in non-signaling framework, monogamy of cycle type noncontextual inequalities and monogamy between Bell inequality and noncontextual inequality in general no-disturbance framework. At last, some generic tradeoff relations of generalized CHSH inequalities for n-party physical systems, which are beyond one-to-many scenario, are discussed.</p>
+        </div>
+        </div>
+
+
+
+
+                   <!-- nano ribbon -->
+     <div class="item mix QF mix_all" data-year="2015" style="display: block;  opacity: 1;">
+        <div class="pubmain">
+            <div class="pubassets">
+                <a href="#" class="pubcollapse"><i class="fas fa-book-open"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="External link"> <i class="fa fa-paper-plane" aria-hidden="true"></i> </a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                <a href="#" class="tooltips" title="" target="_blank" data-original-title="Year"> <span class="fa-stack">
+                    <!-- a strong element with the custom content, in this case a number -->
+                    <strong class="fa-stack-1x"  style="font-size:80%;">
+                        2015   
+                    </strong>
+                </span> </a>
+            </div>
+            <!--<div class="col-sm-3">
+            <div class="image">
+                <img alt="image" style="max-width: 120px; height: auto;" src="img/research/braid.png" class="img-responsive">
+            </div>
+            </div>-->
+            <h4 class="pubtitle">First-Principles Calculations of Electronic Properties of Defective Armchair MoS2 Nanoribbons</h4>
+            <div class="pubauthor">Yan Shao, Fang-Ping Ouyang, Sheng-Lin Peng, Qi Liu, Zhi-An Jia, Hui Zou</div>
+            <div class="pubcite">
+                <a href="https://www.ingentaconnect.com/content/apcs/apcs/2015/00000031/00000011/art00010"><i class="fa fa-book" aria-hidden="true"></i> Acta Physico-Chimica Sinica 31 (11), 2083-2090 (2015)</a><br>
+                <a href="#" target="_blank"><i class="fa fa-print" aria-hidden="true"></i> NA</a>
+            </div>
+        </div>
+        <div class="pubdetails">
+            <h4>Abstract</h4>
+            <p>We investigated the electronic properties of armchair MoS2 nanoribbons with vacancy defects using a first-principles method based on density functional theory. It was found that defects reduced the stability of armchair MoS2 nanoribbons. Mo vacancies and MoS2 triple vacancies can both change the band structures of nanoribbons from semiconductor to metallic, whereas S vacancies, 2S divacancies, and MoS divacancies only decrease the bandgap. The densities of states and eigenstates of the nanoribbons indicated that impurity bands near the Fermi level basically contributed to the defect states. The relationships between the bandgap and width of four types of semiconducting nanoribbons were simulated. Nanoribbons with no defects have a bandgap that oscillates with width in a period of three, but the bandgap changes nonperiodically for nanoribbons with S vacancies, 2S divacancies, and MoS divacancies. We also found that when the concentration of defects decreased, the vacancy defects did not destroy the nanoribbon semiconducting behavior but only decreased the bandgap. These results open up possibilities for MoS2 nanoribbon applications in novel nanoelectronic devices.</p>
+        </div>
+        </div>
+
+
+
+
+
+
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
 
-	<!-- Quote -->
-	<div class="quote">
-		<div class="container text-centered">
-			<h1>FIGHT AGAINST THE UGLINESS IN MATHEMATICS AND PHYSICS.</h1>
-		</div>
-	</div>
 
-	<footer>
-		<div class="container">
-			<div class="units-row">
-			    <div class="unit-50">
-            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <p>©未来研究所/Last undated Sep 13, 2021
-              <a href="https://info.flagcounter.com/bVt9"><img src="https://s01.flagcounter.com/count/bVt9/bg_FFFFFF/txt_000000/border_FFFFFF/columns_3/maxflags_12/viewers_3/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a></p>
 
-		      </div>
-			    <div class="unit-50">
-               
-				  <ul class="social list-flat right">
-						<!-- <li> <IMG SRC="/cgi-bin/Count.cgi?df=cajia.dat&dd=cdr&md=7&ft=0"> </li> -->
-              <li><a href="https://polyidiot.wordpress.com/"><i class="fab fa-wordpress" aria-hidden="true"></i></a></li>
-              <li><a href="https://zhihahnjia.wordpress.com/"><i class="fab fa-wordpress" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.facebook.com/james.kane.351104/"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="https://github.com/polyidoit"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://www.zhihu.com/people/polyidiot"><i class="fab fa-zhihu"></i></a></li>
-              <li><a href="https://www.youtube.com/channel/UCLJfLKIHugP0g27W8i0YuGg"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-            </ul>
-			    </div>
-			</div>
-		</div>
-	</footer>
+    <div id="overlay" style="display: block;"></div>
 
-	<!-- Javascript -->
-	<script src="jquery.min.js"></script>
-	<script src="typed.min.js"></script>
-    <script src="kube.min.js"></script>
-    <script src="site.js"></script>
-    <script>
-		function newTyped(){}$(function(){$("#typed").typed({
-		// Change to edit type effect
-		strings: ["far blue sky", "your galaxy", "everywhere"],
+</div>
+</div>
 
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
-    </script>
-</body>
-</html>
+<audio controls="controls" style="display: none;"></audio><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: STIXSizeOneSym, sans-serif;"></div></div></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
