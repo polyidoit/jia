@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -162,7 +162,7 @@ td {
 }
 thead th,
 thead td {
-  font-weight: bold;
+  font-weight: 400;
   vertical-align: bottom;
 }
 /* Image inside */
@@ -245,7 +245,7 @@ img {
 /* =Typography
 -----------------------------------------------------------------------------*/
 body {
-  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 0.9375em;
   line-height: 1.65em;
   background: #ffffff;
@@ -254,7 +254,7 @@ body {
 /* =Links
 -----------------------------------------------------------------------------*/
 a {
-  color: #134da5;
+  color: #ab4463;
 }
 a:focus,
 a:hover {
@@ -274,8 +274,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
-  font-weight: bold;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   color: #000000;
   text-rendering: optimizeLegibility;
   margin: 0 0 .5em 0;
@@ -401,7 +401,7 @@ address {
 /* =Definition list
 -----------------------------------------------------------------------------*/
 dl dt {
-  font-weight: bold;
+  font-weight: 400;
 }
 dd {
   margin-left: 1.65em;
@@ -419,7 +419,7 @@ dfn[title] {
 }
 strong,
 b {
-  font-weight: bold;
+  font-weight: 400;
 }
 em,
 i {
@@ -461,7 +461,7 @@ var,
 output {
   font-size: 90%;
   font-style: normal;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
 }
 pre {
   margin-top: 1.65em;
@@ -509,7 +509,7 @@ button:focus {
 }
 textarea,
 select {
-  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 1em;
   box-shadow: none;
 }
@@ -534,7 +534,7 @@ input[type="color"],
 input[type="time"],
 input[type="search"],
 input[type="datetime-local"] {
-  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 1em;
   box-shadow: none;
   padding: 0.3em 0.35em;
@@ -609,7 +609,7 @@ fieldset *:last-child {
   margin-bottom: 0 !important;
 }
 legend {
-  font-weight: bold;
+  font-weight: 400;
   padding: 0 1em;
   margin-left: -1em;
 }
@@ -1216,7 +1216,7 @@ textarea {
 /* States */
 .error,
 .success {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12.75px;
 }
 input.input-error,
@@ -1397,7 +1397,7 @@ input.input-smaller {
   text-decoration: none;
 }
 .navbar a:hover {
-  color: #de2c3b;
+  color: #333f4b;
   text-decoration: underline;
 }
 .navbar li.active a,
@@ -1720,7 +1720,7 @@ input.input-smaller {
 input[type="submit"].btn {
   display: inline-block;
   vertical-align: top;
-  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.65em;
@@ -2602,7 +2602,7 @@ input[type="submit"].btn-white.btn-outline.btn-active {
   padding: 4px 7px 3px 7px;
   color: #0f0f0f;
   text-align: center;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .label-outline {
@@ -2737,7 +2737,7 @@ input[type="submit"].btn-white.btn-outline.btn-active {
   padding: 12px 50px 12px 18px;
   color: #000;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 0.9375em;
   line-height: 1,4em;
   background: #f7f8f8;
@@ -2751,7 +2751,7 @@ input[type="submit"].btn-white.btn-outline.btn-active {
 }
 .accordion-title.accordion-title-opened {
   margin-bottom: 0;
-  font-weight: bold;
+  font-weight: 400;
   background: #f0f1f2;
 }
 .accordion-title a,
@@ -3105,7 +3105,7 @@ ul.dropdown li.divider {
 .modal header {
   padding: 30px 40px 5px 40px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
 }
 .modal section {
   padding: 30px 40px 50px 40px;
@@ -3162,7 +3162,7 @@ ul.dropdown li.divider {
 }
 .req,
 .required {
-  font-weight: normal;
+  font-weight: 400;
   color: #de2c3b;
 }
 .error {
@@ -3187,13 +3187,13 @@ ul.dropdown li.divider {
   margin-bottom: 0 !important;
 }
 .normal {
-  font-weight: normal;
+  font-weight: 400;
 }
 .light {
   font-weight: 300;
 }
 .bold {
-  font-weight: bold;
+  font-weight: 400;
 }
 .italic {
   font-style: italic;
