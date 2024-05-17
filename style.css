@@ -188,7 +188,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	-ms-user-select: none;
 	user-select: none;
 	width: 250px;
-	background: #136178;
+	background: #c1c7c9;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -310,7 +310,7 @@ ul#navigation li {
 	display: block;
 	float: none;
 	clear: both;
-	background: #3c768d;
+	background: #7b7e7e;
 	border-top: 1px solid #373737;
 	border-bottom: 1px solid #0e0d0d;
 
@@ -347,7 +347,7 @@ ul#navigation li.currentmenu a {
 }*/
 
 ul#navigation li.currentmenu {
-	background: #a84d4d;
+	background: #916969;
 	border-top: 1px solid #3d3d3d;
 	border-bottom: 1px solid #252525;
 }
