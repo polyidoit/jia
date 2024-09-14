@@ -2389,35 +2389,6 @@
 </div>
 
 
-<script src="jquery-1.10.2.js"></script>
-<script src="perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // 初始化 PerfectScrollbar
-        const container = document.querySelector('#main');
-        const ps = new PerfectScrollbar(container);
-
-        function scrollToTarget() {
-            const targetId = window.location.hash.substring(1);
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                // 获取目标元素的相对顶部位置
-                const containerTop = container.getBoundingClientRect().top;
-                const targetTop = targetElement.getBoundingClientRect().top;
-                // 计算相对位置并滚动
-                container.scrollTop = targetTop - containerTop;
-                ps.update(); // 确保滚动条更新
-            }
-        }
-
-        // 执行滚动
-        scrollToTarget();
-
-        // 监听 hash 改变事件
-        window.addEventListener('hashchange', scrollToTarget);
-    });
-</script>
-
 
 </body>
 </html>

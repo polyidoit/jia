@@ -205,14 +205,13 @@ p {
 }
 
 #main {
-    position: relative; /* 确保滚动位置计算正常 */
-    left: 250px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #fefefe;
-    overflow: hidden; /* 避免默认滚动条 */
-    height: 100vh; /* 设置为视口高度 */
+	position: absolute;
+	left: 250px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #fefefe;
+	overflow: hidden;
 }
 
 .page {
