@@ -2389,16 +2389,38 @@
 </div>
 
 
+<script src="jquery-1.10.2.js"></script>
+<script src="perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
 <script>
-    window.onload = function() {
+    document.addEventListener('DOMContentLoaded', function() {
+        // 初始化 PerfectScrollbar
+        const ps = new PerfectScrollbar('#main');
+
+        // 处理页面加载时的锚点跳转
         if (window.location.hash) {
             const targetId = window.location.hash.substring(1);
             const targetElement = document.getElementById(targetId);
             if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
+                // 使用 PerfectScrollbar 进行平滑滚动
+                document.querySelector('#main').scrollTop = targetElement.offsetTop;
+                ps.update(); // 确保滚动条更新
             }
         }
-    };
+    });
+
+    // 监听 hash 改变事件
+    window.addEventListener('hashchange', function() {
+        const targetId = window.location.hash.substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            // 使用 PerfectScrollbar 进行平滑滚动
+            document.querySelector('#main').scrollTop = targetElement.offsetTop;
+            const ps = new PerfectScrollbar('#main');
+            ps.update(); // 确保滚动条更新
+        }
+    });
+</script>
+
 
 </body>
 </html>
