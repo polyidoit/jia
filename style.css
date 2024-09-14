@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 
 
-/*  custom  */
+/*  custom 1  */
 
 .container {
 	margin: auto;
@@ -1189,29 +1189,31 @@ ul.grid li a,ul.grid li img {
 
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .mfp-content {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
 
-	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 );
-	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 );
-	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 );
-	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 );
-	transform: translateY(0) perspective( 600px ) rotateX( 0 );
+    /* 移除 transform 属性以排除影响 */
+    /* -webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); */
+    /* -moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); */
+    /* -o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); */
+    /* -ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); */
+    /* transform: translateY(0) perspective( 600px ) rotateX( 0 ); */
 }
 
-/* animate out */
 .my-mfp-slide-bottom.mfp-removing .mfp-content {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
 
-	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
-	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
-	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
-	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
-	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+    /* 临时移除 transform 属性以测试影响 */
+    /* -webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); */
+    /* -moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); */
+    /* -o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); */
+    /* -ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); */
+    /* transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); */
 }
+
 
 /* Dark overlay, start state */
 .my-mfp-slide-bottom.mfp-bg {
