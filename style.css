@@ -816,13 +816,14 @@ p {
 }
 
 .page {
-	overflow: auto;
-	position: absolute;
-	top: 0;
-	left: 2000px;
-	bottom: 0;
-	width: 85%;
-	background-color: #f7f7f7;
+    overflow: auto; /* Allow scrolling within the page */
+    position: absolute; /* Position absolutely within the container */
+    top: 0; /* Align with the top of the container */
+    bottom: 0; /* Align with the bottom of the container */
+    width: 100%; /* Width of each page */
+    background-color: #f7f7f7; /* Background color */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
 }
 
 .home {
@@ -985,8 +986,11 @@ ul#navigation::after {
 }
 
 
-.page-container {
-	position: relative;
+.pages-container {
+    position: relative; /* Ensure container is positioned relatively */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Hide overflow if needed */
 }
 
 .pageheader {
