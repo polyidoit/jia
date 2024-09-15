@@ -1400,7 +1400,7 @@ input.input-smaller {
   text-decoration: none;
 }
 .navbar a:hover {
-  color: #333f4b;
+  color: #b72f2f;
   text-decoration: underline;
 }
 .navbar li.active a,
@@ -1452,7 +1452,7 @@ input.input-smaller {
   padding: 0.825em 1.65em;
 }
 .navbar-pills a:hover {
-  color: #0f0f0f;
+  color: #a30d0d;
   background: #eee;
 }
 .navbar-pills li.active a,
@@ -1529,7 +1529,7 @@ input.input-smaller {
   background: #f6f6f6;
 }
 .nav-stacked a:hover {
-  color: #000;
+  color: #ed1a1a;
   background: #eee;
 }
 .nav-stacked li.active a,
@@ -1596,7 +1596,7 @@ input.input-smaller {
 }
 .nav-tabs a:focus,
 .nav-tabs a:hover {
-  color: #0f0f0f;
+  color: #c10e0e;
   text-decoration: underline;
   background-color: #eee;
 }
@@ -1663,7 +1663,7 @@ input.input-smaller {
   text-decoration: none;
 }
 .breadcrumbs a:hover {
-  color: #0f0f0f;
+  color: #b40505;
   text-decoration: underline;
 }
 .breadcrumbs li.active a,
@@ -1671,7 +1671,7 @@ input.input-smaller {
 .breadcrumbs li.active a:hover {
   text-decoration: none;
   cursor: text;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(195, 8, 8, 0.4);
 }
 /* =Pagination
 -----------------------------------------------------------------------------*/
@@ -1714,7 +1714,7 @@ input.input-smaller {
 .pagination a:focus,
 .pagination a:hover {
   text-decoration: none;
-  background-color: #0f0f0f;
+  background-color: #970808;
   color: #fff;
 }
 /* =Buttons
@@ -1742,7 +1742,7 @@ input[type="submit"].btn {
 }
 .btn:hover,
 input[type="submit"].btn:hover {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(164, 27, 27, 0.5);
   background: #b3b6b7;
 }
 .btn::-moz-focus-inner {
@@ -1792,7 +1792,7 @@ input[type="submit"].btn-outline:hover {
 .btn-active:hover,
 .btn[disabled]:hover,
 .btn-disabled:hover {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(165, 12, 12, 0.5);
   background: #b3b6b7;
 }
 .btn-active {
