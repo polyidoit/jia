@@ -1,7 +1,7 @@
 /* General styles
  **************************************************/
 @font-face {
-	font-family: 'Lato';
+    font-family: "Lato", Helvetica;
 	font-style: normal;
 	font-weight: 300;
 	src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
@@ -42,9 +42,14 @@ a,a:hover,a:focus {
 
 
 
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-	font-family: "Lato", Helvetica, Arial, sans-serif;
-	font-weight: 300;
+h1,h2 {
+    font-family: "Lato"，sans-serif;
+    font-weight: 300;
+}
+
+h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 300;
 }
 
 
@@ -757,27 +762,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
   width: 10%;
 } 
 
-/* mobile menu
- **************************************************/
-.mobilemenu {
-	position: absolute;
-	top: 0px;
-	left: 0;
-	right: 0;
-	z-index: 1002;
-	font-size: 30px;
-	padding: 2px 10px;
-	background: #333233;
-	display: block;
-	width: 50px;
-	height: 50px;
-	color: #fff;
-	display: none;
-}
 
-.mobilemenu:hover,.mobilemenu:focus {
-	color: #fff;
-}
 
 /* layout
  **************************************************/
@@ -805,9 +790,12 @@ p {
     text-align:justify;
 }
 
+
+
+
 #main {
 	position: absolute;
-	left: 250px;
+	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
@@ -820,8 +808,10 @@ p {
     position: absolute; /* Position absolutely within the container */
     top: 0; /* Align with the top of the container */
     bottom: 0; /* Align with the bottom of the container */
-    width: 100%; /* Width of each page */
-    background-color: #f7f7f7; /* Background color */
+	width: 50%; /* 让页面变窄 */
+    left: 0;
+    right: 0;
+	background-color: #f7f7f7; /* Background color */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
 }
@@ -831,6 +821,9 @@ p {
 	z-index: 0;
 	width: 100%;
 }
+
+
+
 
 #overlay {
 	position: absolute;
@@ -862,133 +855,13 @@ p {
 	box-shadow: -2px 0 4px -2px rgba(84, 4, 4, 0.25);
 }
 
-/* sidebar
- **************************************************/
- #nav-container {
-    position: relative;
-    padding-bottom: 75px;
-    bottom: 0;
-    height: 100%;
-    z-index: 10; /* 确保导航容器在其他元素之上 */
-    overflow: visible; /* 确保内容不会被裁剪 */
-}
 
-#profile {
-    text-align: center;
-    padding: 30px 10px;
-    position: relative;
-}
 
-#profile .portrait {
-    background-image: url(JiaPic.jpg);
-    width: 125px;
-    margin: 0 auto;
-    height: 125px;
-    border-radius: 50%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-}
-
-#profile .title h2 {
-    font-size: 34px;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
-    margin: 20px 0 10px 0;
-}
-
-#profile .title h3 {
-    font-size: 18px;
-    font-weight: 300;
-    color: #aaa;
-    margin: 0px 0 10px 0;
-}
-
-ul#navigation {
-    padding: 0;
-    margin: 0;
-    list-style: none; /* 移除默认的列表样式 */
-    overflow: hidden; /* 清除浮动问题 */
-}
-
-ul#navigation li {
-    display: block;
-    float: none;
-    clear: both;
-    background: #7b7e7e;
-    border-top: 1px solid #373737;
-    border-bottom: 1px solid #0e0d0d;
-    position: relative; /* 确保子元素的 z-index 生效 */
-    z-index: 1; /* 确保列表项在其他内容之上 */
-    overflow: visible; /* 确保内容不会被裁剪 */
-    
-    -webkit-transition: background 0.5s;
-    -moz-transition: background 0.5s;
-    -o-transition: background 0.5s;
-    -ms-transition: background 0.5s;
-    transition: background 0.5s;
-}
-
-ul#navigation li a {
-    color: rgb(247, 208, 180);
-    font-size: 14px;
-    display: block; /* 确保链接是块级元素，可以被点击 */
-    padding: 10px; /* 增加内边距，扩大点击区域 */
-    text-decoration: none; /* 去除默认的下划线 */
-    position: relative; /* 确保 z-index 生效 */
-    z-index: 2; /* 确保链接在其他元素之上 */
-    pointer-events: auto; /* 确保链接可以接收点击事件 */
-    background: transparent; /* 确保背景透明 */
-    opacity: 1; /* 确保链接完全可见 */
-    visibility: visible; /* 确保链接可见 */
-}
-
-/* 确保链接可点击 */
-ul#navigation li a:hover,
-ul#navigation li a:focus {
-    background: #494848;
-    color: #ffffff;
-}
-
-ul#navigation li.currentmenu {
-    background: #11c5a1; /*边栏菜单被点击时颜色 */
-    border-top: 1px solid #3d3d3d;
-    border-bottom: 1px solid #252525;
-}
-
-ul#navigation li.currentmenu a {
-    color: #fff;
-}
-
-ul#navigation li .text {
-    padding-left: 5%;
-    margin-left: 50px;
-    line-height: 45px;
-
-    -webkit-box-shadow: -3px 0 5px -4px rgb(14, 22, 25);
-    box-shadow: -3px 0 5px -4px rgb(22, 28, 35);
-}
-
-ul#navigation li .icon {
-    float: left;
-    line-height: 45px;
-    width: 50px;
-    text-align: center;
-    font-size: 27px;
-}
-
-/* 清除浮动 */
-ul#navigation::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 
 .pages-container {
     position: relative; /* Ensure container is positioned relatively */
-    width: 100%; /* Full width */
+    width: 80%; /* Full width */
     height: 100%; /* Full height */
     overflow: hidden; /* Hide overflow if needed */
 }
@@ -1858,73 +1731,4 @@ ul.grid li a,ul.grid li img {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	opacity: 0;
-}
-
-/* contact
- **************************************************/
-.contact-office {
-	background: #fff url('../img/contact-bg-1.png') no-repeat;
-}
-
-.contact-lab {
-	background: #fff url('../img/contact-bg-2.png') no-repeat;
-	color: #fff;
-}
-
-
-
-
-
-
-/*.contact-office .icon-huge, .contact-lab .icon-huge{
-	color: #03cc85;
-}*/
-
-
-.icon-huge {
-	font-size: 170px;
-	text-align: center;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-	filter: alpha(opacity=30);
-	opacity: 0.3;
-	display: block;
-	padding-top: 30px;
-}
-
-@media (max-width: 500px) {
-	ul.timeline {
-	margin: 0;
-	border-left: none;
-}
-
-ul.timeline .circle {
-	display: none;
-}
-
-ul.timeline .data {
-	margin: 0 !important;
-	margin-bottom: 10px !important;
-	padding-top: 65px !important;
-}
-
-ul.timeline .date {
-	margin-left: 0 !important;
-}
-
-}
-
-@media (max-width: 991px) {
-	.mobilemenu {
-	display: block;
-}
-
-.social-icons,#main-nav {
-	left: -250px;
-	z-index: 3;
-}
-
-#main {
-	left: 0;
-}
-
 }
