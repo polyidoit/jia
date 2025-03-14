@@ -266,7 +266,9 @@ table {
     page-break-after: avoid;
   }
   .navbar {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .table td,
   .table th {
