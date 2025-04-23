@@ -4,6 +4,40 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
+
+/* General styles
+ **************************************************/
+ @font-face {
+  font-family: "Lato", Helvetica;
+font-style: normal;
+font-weight: 300;
+src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+
+@font-face {
+font-family: 'Lato', Helvetica;
+font-style: normal;
+font-weight: 400;
+src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+
+@font-face {
+font-family: 'Lato', Helvetica;
+font-style: normal;
+font-weight: 900;
+src: local('Lato Black'), local('Lato-Black'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
+}
+
+@font-face {
+font-family: 'Lato', Helvetica;
+font-style: italic;
+font-weight: 400;
+src: local('Lato Italic'), local('Lato-Italic'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/oUan5VrEkpzIazlUe5ieaA.woff) format('woff');
+}
+
+
+
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
@@ -16,6 +50,26 @@ p {
   line-height: 19px;
   margin: 0 0 20px 0;
 }
+
+
+a:link {
+  color: rgb(37, 33, 33); /* Unvisited link */
+}
+
+a:visited {
+  color: purple; /* Visited link */
+}
+
+a:hover {
+  color: red; /* Mouse over link */
+}
+
+a:active {
+  color: orange; /* Selected link */
+}
+
+
+
 
 .title {
   width: 100%;
