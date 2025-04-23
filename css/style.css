@@ -57,7 +57,7 @@ a:link {
 }
 
 a:visited {
-  color: purple; /* Visited link */
+  color: rgb(57, 55, 57); /* Visited link */
 }
 
 a:hover {
@@ -65,7 +65,7 @@ a:hover {
 }
 
 a:active {
-  color: orange; /* Selected link */
+  color: rgb(96, 96, 95); /* Selected link */
 }
 
 
