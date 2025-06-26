@@ -249,7 +249,7 @@ ul.social li a:hover {
   color: #000;
   margin: -24px 0 0 -55.5px;
 }
-
+/* 
 header {
   width: 100%;
   display: block;
@@ -321,12 +321,13 @@ header .sep {
   height: 1px;
   background: #e4e2e2;
   margin: 30px 0 0 0;
-}
+} */
 
 section.about {
   width: 100%;
   display: block;
-  padding: 186px 0 80px 0;
+  padding: 15px 0 80px 0;
+  /* padding: 186px 0 80px 0; */
 }
 section.about .imageholder {
   width: 100%;
