@@ -3,7 +3,7 @@
 body {
 margin:0 auto;
 padding:0;
-font:76% Verdana,Tahoma,Arial,sans-serif;
+font:76% Verdana,Tahoma,sans-serif;
 background:#f4f4f4 url(bg.gif) top center repeat-y;
 color:#404040;
 }
@@ -61,6 +61,28 @@ background-color:inherit;
 text-decoration:none;
 }
 
+#header h2 {
+    color: #505050;
+    background-color: inherit;
+    width: 350px;
+    margin: 0 0 10px;
+    font-size: 2em;
+    float: left;
+    font-weight: 300;  /* 👈 添加这一行，设置为 light */
+}
+
+#header h2 a {
+    color: #505050;
+    background-color: inherit;
+    text-decoration: none;
+    font-weight: 300;  /* 👈 同样添加 */
+}
+
+
+
+
+
+
 #header p {
 width:400px;
 float:right;
@@ -80,7 +102,7 @@ border:0;
 #leftside {
 clear:left;
 float:left;
-width:140px;
+width:180px;
 margin:0 0 5px;
 padding:0;
 }
@@ -88,7 +110,7 @@ padding:0;
 #leftside h2,#leftside h3 {
 color:#505050;
 background-color:inherit;
-font-size:1.3em;
+font-size:0.9em;
 margin:0 0 5px;
 padding:0;
 }
@@ -113,15 +135,16 @@ padding:0;
 /***** Main menu *****/
 
 ul.avmenu {
-width:140px;
+width:180px;
 margin:0 0 18px;
 padding:0;
 list-style:none;
 }
 
 ul.avmenu li {
-width:140px;
+width:180px;
 padding:0;
+font-size:0.9em;
 line-height:1.4em;
 display:inline;
 }
@@ -129,8 +152,8 @@ display:inline;
 ul.avmenu li a {
 background-color:#f4f4f4;
 color:#505050;
-font-weight:bold;
-width:130px;
+font-weight: 600;  /* bold font of side menu*/ 
+width:140px;
 float:left;
 margin-bottom:5px;
 padding:5px 1px 5px 5px;
@@ -147,14 +170,14 @@ color:#505050;
 ul.avmenu ul {
 margin:0 0 0 15px;
 padding:0 0 5px 0;
-font-size:0.9em;
+font-size:0.8em;
 width:125px;
 }
 
 ul.avmenu ul a {
 padding:3px 1px 3px 5px;
 font-weight:normal;
-width:115px;
+width:125px;
 }
 
 ul.avmenu ul ul {
