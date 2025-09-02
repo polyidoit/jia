@@ -108,11 +108,10 @@ h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
   .main-nav {
 	background: #f4f4f4; /* 上方菜单背景*/
 	padding-top: 20px;
-	    margin-bottom: -10px; /* Add some bottom margin */
+	    margin-bottom: -20px; /* Add some bottom margin */
 }
 	.main-nav nav ul li a {
 	  color: #a7a7a7; 
-	    margin-bottom: -10px; /* Add some bottom margin */
 	}
 	.main-nav1 nav ul li.active a {
 	  color: #4d4d4d; }
