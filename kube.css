@@ -254,11 +254,11 @@ body {
 /* =Links
 -----------------------------------------------------------------------------*/
 a {
-  color: #2e65a0; /* Muted navy blue */
+  color: #5ba6f6; /* Muted navy blue */
 }
 a:focus,
 a:hover {
-  color: #0dc87d; /* Darker on hover */
+  color: #0dc5c8; /* Darker on hover */
 }
 
 
