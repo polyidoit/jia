@@ -422,6 +422,7 @@ dfn[title] {
 }
 strong,
 b {
+  font-weight: bold !important;
   font-weight: 400;
 }
 em,

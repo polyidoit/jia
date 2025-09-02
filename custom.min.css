@@ -67,7 +67,7 @@ a.url-link:hover {
 }
 
 /* Navigation */
-.main-nav {
+/* .main-nav {
     background: #f4f4f4;
     padding-top: 23px;
 }
@@ -78,7 +78,55 @@ a.url-link:hover {
 
 .main-nav nav ul li.active a {
     color: #0dc87d; 
+} */
+
+
+/* Navigation */
+.main-nav {
+    background: #d7d7d7;
+    padding-top: 30px; /* Reduced from 23px */
+    padding-bottom: 0px; /* Add some bottom padding */
 }
+
+.main-nav nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2px;
+}
+
+.main-nav nav ul li a {
+    color: #575656;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 1.1rem;
+    background-color: #c1c1c1;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid #bebebe;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-nav nav ul li a:hover {
+    color: #ffffff;  /* Change font to a given color on hover */
+    background-color: #525252;
+    border-color: #323232;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.main-nav nav ul li.active a {
+    color: #ffffff;
+    background-color: #0dc87d;
+    border-color: #0dc87d;
+}
+
+.main-nav nav ul li.active a:hover {
+    background-color: #0bb56f;
+    border-color: #0bb56f;
+}
+
 
 /* Sections */
 .section.second {
