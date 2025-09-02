@@ -84,7 +84,7 @@ a.url-link:hover {
 /* Navigation */
 .main-nav {
     background: #d9d9d9;
-    padding-top: 30px; /* Reduced from 23px */
+    padding-top: 20px; /* Reduced from 23px */
     padding-bottom: 0px; /* Add some bottom padding */
 }
 
@@ -101,11 +101,12 @@ a.url-link:hover {
     font-size: 1.1rem;
     background-color: #c1c1c1;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 2px solid #bebebe;
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: -10px; /* Add some bottom margin */
 }
 
 .main-nav nav ul li a:hover {
