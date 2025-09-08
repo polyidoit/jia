@@ -14,19 +14,24 @@ p, li {
 }
 
 a {
-    color: #4e4e4e; /* Color for regular links */
-    text-decoration: none; /* Remove underline from links */
+  color: #5e758e; /* Muted navy blue */
+  transition: all 0.2s ease; /* Smooth animation for color and transform */
+  display:inline-block; /* Allows transform to work properly */
+  text-decoration: underline;
 }
 
-/* URL Links */
-a.url-link {
-    color: #00bfff; /* Light blue color for URL links */
-    text-decoration: none; /* Remove underline from URL links */
+a:focus,
+a:hover {
+  color: #0dc5c8; /* Brighter cyan on hover/focus */
+  transform: translateY(-3px);
+  outline: none;
+  text-shadow: 0 2px 6px rgba(143, 144, 144, 0.5); /* Glow effect on hover */
 }
 
-a.url-link:hover {
-    color: #87ceeb; /* Lighter shade of blue on hover */
-    transition: all 0.2s ease-in-out;
+a:active {
+  color: #0dc5c8;
+  transform: translateY(-1px);
+  text-shadow: 0 1px 3px rgba(162, 165, 165, 0.4); /* Slightly reduced glow */
 }
 
 /* Layout */
@@ -83,7 +88,7 @@ a.url-link:hover {
 
 /* Navigation */
 .main-nav {
-    background: #dcdbdb;
+    background: #ababab;
     padding-top: 20px; /* Reduced from 23px */
     padding-bottom: 0px; /* Add some bottom padding */
 }

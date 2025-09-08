@@ -57,6 +57,7 @@ a:focus {
 a:active,
 a:hover {
   outline: 0;
+  transform: translateY(-3px); /* Added upward shift effect */
 }
 
 h1 {

@@ -52,21 +52,28 @@ p {
 }
 
 
-a:link {
-  color: rgb(37, 33, 33); /* Unvisited link */
+
+a {
+  color: #5e758e; /* Muted navy blue */
+  transition: all 0.2s ease; /* Smooth animation for color and transform */
+  display:inline-block; /* Allows transform to work properly */
+  text-decoration: underline;
 }
 
-a:visited {
-  color: rgb(57, 55, 57); /* Visited link */
-}
-
+a:focus,
 a:hover {
-  color: red; /* Mouse over link */
+  color: #0dc5c8; /* Brighter cyan on hover/focus */
+  transform: translateY(-3px);
+  outline: none;
+  text-shadow: 0 2px 6px rgba(143, 144, 144, 0.5); /* Glow effect on hover */
 }
 
 a:active {
-  color: rgb(96, 96, 95); /* Selected link */
+  color: #0dc5c8;
+  transform: translateY(-1px);
+  text-shadow: 0 1px 3px rgba(162, 165, 165, 0.4); /* Slightly reduced glow */
 }
+
 
 
 
