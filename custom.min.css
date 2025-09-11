@@ -187,11 +187,11 @@ a:active {
 
 .section .container::after {
     content: "";
-    display: block;
-    height: 4px;             /* thickness of the line */
-    background-color: rgb(179, 179, 179);  /* color of the line */
-    margin-top: 40px;        /* space above the line */
-    width: 30%;             /* span full container width */
+    /* display: block; */
+    /* height: 4px;             thickness of the line */
+    /* background-color: rgb(179, 179, 179);  color of the line */
+    margin-top: 0px;        space above the line
+    /* width: 30%;             span full container width */
 }
 
 .section .container h1 {
