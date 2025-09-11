@@ -22,7 +22,8 @@ a {
 
 a:focus,
 a:hover {
-  color: #0dc5c8; /* Brighter cyan on hover/focus */
+  color: #0dc5c8;
+  background-color: #ede9e4; 
   transform: translateY(-3px);
   outline: none;
   text-shadow: 0 2px 6px rgba(143, 144, 144, 0.5); /* Glow effect on hover */
@@ -95,7 +96,7 @@ a:active {
     font-size: 1.1rem;
     background: linear-gradient(180deg, #b2b2b2 0%, #ededeb 100%);
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 4px;
     /* border: 1px solid #646464; */
     font-weight: 600;
     transition: all 0.3s ease;
