@@ -916,7 +916,9 @@ p {
 }
 
 .section-container {
-	padding: 0 10%;
+    width: 60%;          /* container spans 80% of parent */
+    margin: 0 auto;      /* center horizontally */
+    padding: 0 20px;     /* optional inner padding */
 }
 
 .color-1 {
