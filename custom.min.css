@@ -1,14 +1,14 @@
 /* Fonts */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+font-family:  "Helvetica Neue",Helvetica,Tahoma,sans-serif;
 font-weight: 300;
 }
 
 /* Main Text */
 p, li {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-    color: #4e4e4e;
+    color: #5f5f5f;
     font-size: 1em;
     line-height: 1.75em;
 }
@@ -72,23 +72,8 @@ a:active {
 }
 
 /* Navigation */
-/* .main-nav {
-    background: #f4f4f4;
-    padding-top: 23px;
-}
-
-.main-nav nav ul li a {
-    color: #222222;
-}
-
-.main-nav nav ul li.active a {
-    color: #0dc87d; 
-} */
-
-
-/* Navigation */
 .main-nav {
-    background: #ababab;
+    background: rgb(179, 179, 179);
     padding-top: 20px; /* Reduced from 23px */
     padding-bottom: 0px; /* Add some bottom padding */
 }
@@ -99,39 +84,95 @@ a:active {
     gap: 2px;
 }
 
+.main-nav nav ul li {
+    position: relative;
+}
+
 .main-nav nav ul li a {
-    color: #616060;
+    color: #838486;
     display: inline-block;
     padding: 6px 12px;
     font-size: 1.1rem;
-    background: linear-gradient(180deg, #c5c5c5 0%, #eeefef 100%);
+    background: linear-gradient(180deg, #b2b2b2 0%, #ededeb 100%);
     text-decoration: none;
     border-radius: 6px;
-    /* border: 1px solid #cbd5e0; */
+    /* border: 1px solid #646464; */
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12);
     margin-bottom: -10px;
+    transform: none; /* Override default a:hover transform */
+    text-shadow: none; /* Override default a:hover text-shadow */
+    text-decoration: none;
 }
 
 .main-nav nav ul li a:hover {
     color: #ffffff;  /* Change font to a given color on hover */
-    background-color: #525252;
+    background: #868686; /* Use 'background' instead of 'background-color' */
     border-color: #e2e2e2;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-shadow: none; /* Override default a:hover text-shadow */
 }
 
 .main-nav nav ul li.active a {
     color: #ffffff;
-    background-color: #0dc87d;
+    background: #0dc87d;  /* use 'background' here */
     border-color: #0dc87d;
 }
 
 .main-nav nav ul li.active a:hover {
-    background-color: #0bb56f;
+    background: #0dc87d;  /* use 'background' here */
     border-color: #0bb56f;
 }
+
+/* Dropdown menu (nested ul) */
+.main-nav nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto;
+  min-width: 190px; /* don’t shrink too far */
+  list-style: none;
+  list-style-position: inside; /* ✅ bullets inside */
+  margin-right: 5px;
+  padding: 5px 0;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+
+/* Show dropdown on hover */
+.main-nav nav ul li:hover > .dropdown {
+  display: block;
+}
+
+/* Dropdown links */
+.main-nav nav ul li .dropdown li a {
+  display: block;
+  padding: 5px 2px;
+  background: #fff;
+  color: #333;
+  font-size: 0.75rem;
+  border-radius: 0; /* reset */
+  box-shadow: none; /* reset */
+  margin-bottom: 0; /* reset */
+  margin-left: 15px;
+  margin-right: 0px;
+  text-align: left; /* align text to the left */
+}
+
+.main-nav nav ul li .dropdown li a:hover {
+  background: #525252;
+  color: #fff;
+}
+
+
+
+
 
 
 /* Sections */
@@ -143,10 +184,13 @@ a:active {
     position: relative;
 }
 
-.section .container:after {
-    position: absolute;
-    content: url(separator.png);
-    left: 20px;
+.section .container::after {
+    content: "";
+    display: block;
+    height: 4px;             /* thickness of the line */
+    background-color: rgb(179, 179, 179);  /* color of the line */
+    margin-top: 40px;        /* space above the line */
+    width: 30%;             /* span full container width */
 }
 
 .section .container h1 {
@@ -157,7 +201,7 @@ a:active {
 
 /* Intro */
 .intro {
-    padding: 95px 0 70px 0;
+    padding: 10px 0 70px 0;
     overflow-x: hidden;
 }
 
@@ -173,15 +217,15 @@ a:active {
 
 .intro h1:before {
     position: absolute;
-    left: -220px;
-    top: -150px;
-    font-size: 270px;
+    left: -50px;
+    top: -30px;
+    font-size: 110px;
     z-index: -1;
-    color: #f4f4f4;
+    color: #f4f4f4; /* Light grey color for ZAJIA */
 }
 
 .intro h1 span {
-    font-size: 25px;
+    font-size: 20px;
 }/* type text size change */
 
 /* Work */
@@ -229,17 +273,26 @@ a:active {
 
 /* Quote */
 .quote {
-    background: url(bg.jpg);
-    padding: 20px 0;
-    margin-top: 120px;
+    background: url(bg.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: 0px;
+    min-height: 400px;   /* increase for taller banner */
+    display: flex;
+    align-items: center; /* vertically center text */
+    justify-content: center; /* optional: center horizontally */
+    text-align: center;
 }
+
 
 .quote h1 {
     margin: 100px 0;
     padding: 40px 20px;
-    border: 5px solid #fff;
+    border: 4px solid #fff;
     color: #fff;
+    font-size: 1.5rem;   /* adjust as needed */
+    line-height: 1.3;  /* optional: improve readability */
 }
+
 
 /* Footer */
 footer {
