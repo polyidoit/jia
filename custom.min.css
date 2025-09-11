@@ -276,6 +276,7 @@ a:active {
     background: url(bg.jpg) no-repeat center center;
     background-size: cover;
     margin-top: 0px;
+    margin-bottom: 20px;
     min-height: 400px;   /* increase for taller banner */
     display: flex;
     align-items: center; /* vertically center text */
