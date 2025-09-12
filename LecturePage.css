@@ -395,6 +395,41 @@ ul.avmenu ul ul a {
     display: none;
 }
 
+
+
+
+/* list section */
+
+div.resgroup {
+  display: flex;            /* make image + text side by side */
+  align-items: flex-start;  /* top-align image and text */
+  gap: 20px;                /* space between columns */
+  margin: 3px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+div.resgroup img {
+  width: 130px;             /* fixed width */
+  aspect-ratio: 6 / 5;      /* force 4:3 ratio */
+  height: auto;             /* auto-calculated */
+  object-fit: cover;        /* crop if source ratio mismatches */
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+
+div.resgroup div.resgroupdesc {
+  flex: 1;                  /* text takes remaining space */
+  margin: 0;                /* reset margin */
+}
+
+
+
+
+
+
 /* Mobile Responsive Styles */
 @media screen and (max-width: 767px) {
     
@@ -555,3 +590,4 @@ ul.avmenu ul ul a {
         font-size: 0.8em;
     }
 }
+
