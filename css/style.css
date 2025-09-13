@@ -842,6 +842,20 @@ footer {
   background: #eeeeee;
   padding: 10px 0;
 }
+
+footer ul.social {
+  text-align: center;
+}
+
+footer ul.social li {
+  display: inline-block;
+  margin: 0 6px; /* tighten spacing if needed */
+}
+
+footer ul.social i {
+  font-size: 16px; /* control logo size */
+}
+
 footer .copyright {
   width: 100%;
   display: block;
@@ -852,6 +866,7 @@ footer .copyright {
   padding: 20px 0 0 0;
 }
 
+/* responsive */
 @media only screen and (max-width: 1024px) {
   header {
     position: relative;
@@ -967,10 +982,16 @@ footer .copyright {
   footer ul.social {
     text-align: center;
   }
+
+  footer ul.social i {
+    font-size: 14px; /* even smaller on mobile */
+  }
+
   footer .copyright {
     text-align: center;
   }
 }
+
 @media only screen and (max-width: 450px) {
   section.works ul li {
     width: 100%;
