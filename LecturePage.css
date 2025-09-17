@@ -411,7 +411,7 @@ div.resgroup {
 
 div.resgroup img {
   width: 130px;             /* fixed width */
-  aspect-ratio: 6 / 5;      /* force 4:3 ratio */
+  aspect-ratio: 9 / 7;      /* force 4:3 ratio */
   height: auto;             /* auto-calculated */
   object-fit: cover;        /* crop if source ratio mismatches */
   margin: 0;
