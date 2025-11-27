@@ -1284,6 +1284,11 @@ ul.timeline li .data .text {
 	box-shadow: inset 0px 3px 5px -3px #ccc;
 }
 
+.ul-withdetails li:hover {
+    background-color: #efeff0;
+    transition: background-color 0.3s ease;
+}
+
 /*************************************************
  * lab partners
  **************************************************/
