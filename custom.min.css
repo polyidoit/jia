@@ -74,15 +74,13 @@ a:active {
 
 /* Navigation */
 .main-nav {
-            background: rgb(179, 179, 179);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            /* padding: 1rem 0; */
-            padding-top: 20px; /* Reduced from 23px */
-            padding-bottom: 0px; /* Add some bottom padding */
-
+    background: rgb(179, 179, 179);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* Increased from 1000 */
+    padding-top: 20px;
+    padding-bottom: 0px;
 }
 
 .main-nav nav ul {
