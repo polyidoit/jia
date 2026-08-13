@@ -74,7 +74,7 @@ a:active {
 
 /* Navigation */
 .main-nav {
-    background: rgb(179, 179, 179);
+    background: rgb(179, 179, 179);   /* background of header menu */
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
