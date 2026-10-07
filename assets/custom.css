@@ -1,0 +1,358 @@
+:root{--ink:#000;--muted:#6f6f6f;--paper:#fff;--sidebar:#f1f1f1;--rule:#dadada;--serif:Georgia,"Times New Roman","Noto Serif CJK SC","Songti SC",SimSun,serif}
+html{scroll-padding-top:100px}body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.75;letter-spacing:0}a{color:inherit;text-underline-offset:5px}a:hover{color:var(--muted)}a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid #000;outline-offset:5px}button,select{font-family:inherit}h1,h2,h3{font-weight:400;line-height:1.2}p+p{margin-top:20px}[hidden]{display:none!important}.group-sidebar{position:fixed;inset:0 auto 0 0;width:180px;background:var(--sidebar);display:flex;justify-content:center;align-items:flex-start;padding:32px 20px;overflow:auto;z-index:30}.group-sidebar img{width:100px;height:auto;max-height:calc(100dvh - 64px);object-fit:contain}.page-shell{margin-left:180px}.group-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);padding:28px 5vw;border-bottom:1px solid var(--rule)}#group-nav{display:flex;gap:28px;justify-content:flex-end;flex-wrap:wrap;font-size:15px}#group-nav a{text-decoration:none}#group-nav a[aria-current]{text-decoration:underline}.mobile-brand,.menu-toggle{display:none}.section{max-width:1110px;margin:auto;padding:90px 60px;border-bottom:1px solid var(--rule);scroll-margin-top:30px}.hero{padding-top:92px;padding-bottom:64px}.eyebrow{font-size:13px;letter-spacing:.08em;color:var(--muted);margin-bottom:28px}.hero h1{font-size:clamp(42px,5.4vw,76px);line-height:1.12;letter-spacing:-.035em}.hero h1 em{font-weight:400}.chinese-title{font-size:24px;letter-spacing:.22em;margin-top:28px}.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-top:46px}.hero-bottom p{max-width:490px;font-size:20px;line-height:1.6}.text-link{display:inline-block;margin-top:25px;font-size:15px;white-space:nowrap}.location{margin-top:40px;font-size:13px;color:var(--muted);letter-spacing:.04em}.section-heading{display:flex;gap:22px;align-items:baseline;margin-bottom:48px}.section-number{font-size:12px;color:var(--muted);letter-spacing:.05em}.section h2{font-size:37px;letter-spacing:.01em}.split{display:grid;grid-template-columns:1fr 1.3fr;gap:70px}.lead{font-size:31px;line-height:1.45}.research-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:65px}.research-grid article{border-top:1px solid var(--rule);padding:30px 0 34px}.topic-number{font-size:13px;color:var(--muted);display:block;margin-bottom:20px}.research-grid h3{font-size:25px;line-height:1.35;margin-bottom:22px}.research-grid p{color:#444;font-size:16px}.pi-profile{display:grid;grid-template-columns:1fr 1.3fr;gap:70px;padding-bottom:48px}.pi-name h3{font-size:46px;letter-spacing:-.02em}.chinese-name{font-size:27px;letter-spacing:.2em;margin:18px 0!important}.pi-name>p:last-child{font-size:15px;color:var(--muted)}.inline-links{display:flex;gap:14px 24px;flex-wrap:wrap;margin-top:25px;font-size:14px}.member-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 30px}.member{border-top:1px solid var(--rule);padding:25px 0 28px;display:block;text-decoration:none}.member h3{font-size:24px;margin-bottom:12px}.member p{font-size:14px;color:var(--muted);min-height:50px}.member span,.member>a{font-size:13px;text-decoration:underline;text-underline-offset:4px}.paper-controls{display:flex;gap:14px;align-items:center;font-size:14px;margin-bottom:25px}.paper-controls select{border:1px solid var(--rule);background:#fff;color:#000;padding:8px 12px;max-width:70%}#paper-count{margin-left:auto;color:var(--muted)}.paper-list{list-style:none;margin:0;padding:0}.paper-list li{display:grid;grid-template-columns:55px 1fr 24px;gap:22px;border-top:1px solid var(--rule);padding:27px 0}.paper-year{font-size:14px;color:var(--muted);padding-top:5px}.paper-list h3{font-size:22px;line-height:1.4}.paper-list h3 a{text-decoration:none}.paper-list p{font-size:14px;margin-top:12px;color:#444}.paper-list p.publication{margin-top:3px;font-size:13px;color:var(--muted)}.paper-arrow{text-decoration:none;font-size:23px}.subheading{font-size:32px;line-height:1.3;margin-bottom:24px}.news-list article{border-top:1px solid var(--rule);padding:22px 0}.news-list time{font-size:12px;letter-spacing:.04em;color:var(--muted)}.news-list h3{font-size:22px;margin-top:12px}.news-list h3 a{text-decoration:none}.news-list p{font-size:14px;color:var(--muted);margin-top:12px}.contact-details{padding-top:8px}.contact-details>a{display:block;width:fit-content;overflow-wrap:anywhere}.email{font-size:25px}.contact-details address{font-style:normal;margin-top:28px;font-size:16px}.contact-details p:last-child{font-size:14px;color:var(--muted)}.group-footer{background:#000;color:#fff;display:flex;justify-content:space-between;gap:30px;padding:50px 60px;font-size:14px}.group-footer p+p{margin-top:5px;color:#ccc}.group-footer nav{display:flex;flex-direction:column;gap:12px;font-size:13px}.group-footer a{text-decoration:none}.group-footer a:hover{color:#ccc}.skip-link{position:fixed;top:-100px;left:195px;z-index:50;background:#fff;padding:12px}.skip-link:focus{top:10px}
+@media(max-width:1100px){.group-sidebar{width:130px}.page-shell{margin-left:130px}.section{padding:65px 38px}.group-header{padding:24px 30px}#group-nav{gap:18px;font-size:14px}.split,.pi-profile{gap:38px}.hero-bottom{gap:20px}.hero-bottom p{font-size:18px}.hero h1{font-size:57px}.member-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:767px){html{scroll-padding-top:110px}.group-sidebar{display:none}.page-shell{margin-left:0}.group-header{padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:15px}.mobile-brand{display:block;font-size:16px;text-decoration:none;letter-spacing:.08em}.mobile-brand span{display:block;font-size:11px;letter-spacing:.02em;color:var(--muted)}.menu-toggle{display:block;border:0;background:none;padding:8px 0;font-size:14px;cursor:pointer}#group-nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;padding:20px 24px;border-bottom:1px solid var(--rule);grid-template-columns:1fr 1fr;gap:20px}#group-nav.is-open{display:grid}.section{padding:55px 24px;scroll-margin-top:20px}.hero{padding-top:60px}.hero h1{font-size:clamp(34px,7.8vw,56px)}.eyebrow{font-size:11px;line-height:1.7;margin-bottom:24px}.chinese-title{font-size:19px;letter-spacing:.12em}.hero-bottom{display:block;margin-top:32px}.hero-bottom p{font-size:18px}.section-heading{margin-bottom:32px;gap:15px}.section h2{font-size:30px}.split,.pi-profile{grid-template-columns:1fr;gap:30px}.lead{font-size:27px}.research-grid{gap:0 24px}.research-grid h3{font-size:21px}.research-grid p{font-size:15px}.member-grid{gap:0 22px}.member h3{font-size:22px}.paper-list li{grid-template-columns:36px 1fr;gap:14px}.paper-arrow{display:none}.paper-list h3{font-size:20px}.paper-controls{gap:8px;font-size:12px}.subheading{font-size:28px}.email{font-size:23px}.group-footer{padding:35px 24px;flex-direction:column}.skip-link{left:15px}}
+@media(max-width:400px){.research-grid{grid-template-columns:1fr}.hero h1{font-size:34px}.member h3{font-size:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.hero-bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  align-items: start;
+  gap: 48px;
+  margin-top: 46px;
+}
+
+.hero-introduction p {
+  max-width: none;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.hero-introduction p + p {
+  margin-top: 20px;
+}
+
+.hero-pi {
+  width: 200px;
+  margin: 0;
+  text-align: center;
+}
+
+.hero-pi img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-pi figcaption {
+  margin-top: 14px;
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .hero-bottom {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-pi {
+    justify-self: center;
+  }
+}
+
+.member-name-en,
+.member-name-cn {
+  display: block;
+}
+
+.member-name-cn {
+  margin-top: 10px;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  line-height: 1.5;
+}
+
+.member .member-name span {
+  display: block;
+  text-decoration: none;
+}
+
+.member .member-name-en {
+  font-family: var(--serif);
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.member .member-name-cn {
+  margin-top: 10px;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  line-height: 1.5;
+}
+
+.member .member-profile-link {
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+  .member .member-name-en {
+    font-size: 21px;
+  }
+
+  .member .member-name-cn {
+    font-size: 18px;
+  }
+}
+
+
+.pi-name > .eyebrow {
+  margin-bottom: 20px;
+}
+
+.pi-card {
+  width: 260px;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.pi-portrait {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pi-card figcaption {
+  margin-top: 20px;
+}
+
+.pi-name .pi-card-name {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.pi-card-name a {
+  text-decoration: none;
+}
+
+.pi-card-name a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.pi-card-divider {
+  color: #aaa;
+  font-size: 18px;
+}
+
+.pi-card-name-cn {
+  font-size: 21px;
+  letter-spacing: 0.08em;
+}
+
+.pi-card .pi-card-position {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.contact-section .heading-cn {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 0.65em;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.contact-section .subheading-cn {
+  display: block;
+  margin-top: 16px;
+  font-size: 23px;
+  letter-spacing: 0.12em;
+}
+
+.contact-section .contact-cn {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.contact-details .eyebrow span {
+  display: block;
+  margin-top: 6px;
+  letter-spacing: 0.1em;
+}
+
+.contact-details .address-cn {
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.seminar-intro {
+  margin-bottom: 28px;
+  font-size: 20px;
+}
+
+.seminar-intro span {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.seminar-timezone {
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.seminar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.seminar-entry {
+  display: grid;
+  grid-template-columns: 175px minmax(0, 1fr);
+  gap: 36px;
+  padding: 32px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.seminar-schedule time {
+  display: block;
+}
+
+.seminar-date,
+.seminar-day,
+.seminar-time {
+  display: block;
+}
+
+.seminar-date {
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.seminar-day {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.seminar-time {
+  margin-top: 12px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.seminar-content h3 {
+  margin: 0 0 18px;
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+.seminar-content .seminar-speaker {
+  margin: 0;
+  font-size: 18px;
+}
+
+.seminar-speaker span {
+  margin-left: 8px;
+}
+
+.seminar-content .seminar-affiliation {
+  margin-top: 4px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.seminar-details {
+  margin-top: 22px;
+  font-size: 14px;
+}
+
+.seminar-details > div {
+  display: grid;
+  grid-template-columns: 55px minmax(0, 1fr);
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.seminar-details dt {
+  color: var(--muted);
+}
+
+.seminar-details dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.seminar-abstract {
+  margin-top: 22px;
+  font-size: 15px;
+}
+
+.seminar-abstract summary {
+  width: fit-content;
+  cursor: pointer;
+  text-underline-offset: 4px;
+}
+
+.seminar-abstract summary:hover {
+  text-decoration: underline;
+}
+
+.seminar-abstract p {
+  margin-top: 14px;
+  line-height: 1.8;
+}
+
+#seminar-empty {
+  padding: 24px 0;
+  color: var(--muted);
+}
+
+@media (max-width: 767px) {
+  .seminar-entry {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .seminar-schedule time {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 16px;
+  }
+
+  .seminar-day,
+  .seminar-time {
+    margin-top: 0;
+  }
+
+  .seminar-time {
+    font-size: 21px;
+  }
+
+  .seminar-content h3 {
+    font-size: 22px;
+  }
+}
