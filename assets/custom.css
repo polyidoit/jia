@@ -264,8 +264,12 @@ html{scroll-padding-top:100px}body{background:var(--paper);color:var(--ink);font
 }
 
 .seminar-status {
-  color: red;
+  display: inline-block;      /* 让背景只包住文字，而不是整行 */
+  background-color: red;      /* 红色背景 */
+  color: #fff;                /* 白色文字 */
   font-weight: bold;
+  padding: 4px 10px;          /* 文字与背景之间留点空间 */
+  border-radius: 0;           /* 直角方形（默认就是 0） */
 }
 
 .seminar-content h3 {
